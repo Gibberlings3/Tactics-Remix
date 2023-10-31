@@ -7,7 +7,6 @@ ACTION_FOR_EACH gntwp IN
       giafir2
       giafir
       yagawh
-      //mh#hamm2
     BEGIN
       ACTION_IF FILE_EXISTS_IN_GAME ~%gntwp%.ITM~ BEGIN
         
@@ -27,6 +26,18 @@ ACTION_FOR_EACH gntwp IN
       END
     END
 
+// Ensure Yaga gets a hammer that receives the appropriate difficulty enhancements
+ACTION_IF FILE_EXISTS_IN_GAME ~mh#hamm2.ITM~ BEGIN
+  ACTION_IF FILE_EXISTS_IN_GAME ~yagawh.ITM~ BEGIN
+    COPY_EXISTING ~YAGA01.CRE~ ~override~
+      ADD_CRE_ITEM ~yagawh~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP
+  END ELSE BEGIN
+    COPY_EXISTING ~YAGA01.CRE~ ~override~
+      ADD_CRE_ITEM ~giafir~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP
+  END
+END
+
+/*
 ACTION_IF FILE_EXISTS_IN_GAME ~mh#hamm2.ITM~ BEGIN
   COPY_EXISTING ~mh#hamm2.ITM~ ~override/mohm03.itm~
     LPF DELETE_EFFECT INT_VAR header_type = 1 match_opcode = 12 END
@@ -44,4 +55,5 @@ ACTION_IF FILE_EXISTS_IN_GAME ~mh#hamm2.ITM~ BEGIN
 
   COPY_EXISTING ~YAGA01.CRE~ ~override~
     ADD_CRE_ITEM ~mohm03~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP // Add my version of the hammer
-END 
+END
+*/ 

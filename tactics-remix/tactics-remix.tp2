@@ -67,8 +67,8 @@ LANGUAGE ~Español (Remix by alaisFcZ w/ original translation by Clan REO)~
 // "Kuroisan", the Acid Kensai                                           //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @2 DESIGNATED 2 GROUP @3010 LABEL TacticsRemix-Kuroisan
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/kuroisan.tpa~
 
@@ -76,8 +76,8 @@ INCLUDE ~tactics-remix/components/kuroisan.tpa~
 // The Ritual                                                            //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @1 DESIGNATED 1 GROUP @3010 LABEL TacticsRemix-Ritual
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/ritual.tpa~
 
@@ -85,8 +85,8 @@ INCLUDE ~tactics-remix/components/ritual.tpa~
 // "Red Badge" Poison-Based Encounter                                    //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @3 DESIGNATED 3 GROUP @3010 LABEL TacticsRemix-RedBadge
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/red_badge.tpa~
 
@@ -94,8 +94,8 @@ INCLUDE ~tactics-remix/components/red_badge.tpa~
 // Gebhard Blucher's Lich in the Docks                                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @4 DESIGNATED 4 GROUP @3010 LABEL TacticsRemix-LichDocks
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/lich_docks.tpa~
 
@@ -103,8 +103,8 @@ INCLUDE ~tactics-remix/components/lich_docks.tpa~
 // Kensai Ryu's Gnome Fighter/Illusionist in the Docks                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @5 DESIGNATED 5 GROUP @3010 LABEL TacticsRemix-GnomeFI
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/gnomefi.tpa~
 
@@ -119,8 +119,8 @@ INCLUDE ~tactics-remix/components/gnomefi.tpa~
 // Improved TorGal and De'Arnisse Keep                                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @7 DESIGNATED 7 GROUP @3011 LABEL TacticsRemix-TorGal
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/torgal.tpa~
 */
@@ -129,8 +129,8 @@ INCLUDE ~tactics-remix/components/torgal.tpa~
 // Improved Sahuagin City                                                //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @8 DESIGNATED 8 GROUP @3011 LABEL TacticsRemix-Sahuagin
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/sahuagin.tpa~
 
@@ -139,8 +139,8 @@ INCLUDE ~tactics-remix/components/sahuagin.tpa~
 // Improved Bodhi                                                        //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @9 DESIGNATED 9 GROUP @3011 LABEL TacticsRemix-Bodhi
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/bodhi.tpa~
 */
@@ -149,8 +149,8 @@ INCLUDE ~tactics-remix/components/bodhi.tpa~
 // Improved Irenicus                                                     //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @10 DESIGNATED 10 GROUP @3011 LABEL TacticsRemix-Irenicus
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/irenicus.tpa~
 
@@ -158,8 +158,8 @@ INCLUDE ~tactics-remix/components/irenicus.tpa~
 // Improved Guarded Compound in the Temple District                      //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @11 DESIGNATED 11 GROUP @3011 LABEL TacticsRemix-GuardedCompound
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/guarded_compound.tpa~
 
@@ -167,8 +167,8 @@ INCLUDE ~tactics-remix/components/guarded_compound.tpa~
 // Improved Twisted Rune                                                 //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @12 DESIGNATED 12 GROUP @3011 LABEL TacticsRemix-TwistedRune
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/twisted_rune.tpa~
 
@@ -177,8 +177,8 @@ INCLUDE ~tactics-remix/components/twisted_rune.tpa~
 // Gebhard Blucher's Improved Mae'Var                                    //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @13 DESIGNATED 13 GROUP @3011 LABEL TacticsRemix-MaeVar
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/maevar.tpa~
 */
@@ -187,8 +187,8 @@ INCLUDE ~tactics-remix/components/maevar.tpa~
 // Gebhard Blucher's Improved Demon Knights                              //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @14 DESIGNATED 14 GROUP @3011 LABEL TacticsRemix-DemonKnights
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/demon_knights.tpa~
 
@@ -196,8 +196,8 @@ INCLUDE ~tactics-remix/components/demon_knights.tpa~
 // Kensai Ryu's Tougher Kangaxx and Guardians                            //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @15 DESIGNATED 15 GROUP @3011 LABEL TacticsRemix-Kangaxx
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/kangaxx.tpa~
 
@@ -205,8 +205,8 @@ INCLUDE ~tactics-remix/components/kangaxx.tpa~
 // Kensai Ryu's Improved Crypt King                                      //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @6 DESIGNATED 6 GROUP @3011 LABEL TacticsRemix-CryptKing
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/crypt_king.tpa~
 
@@ -215,8 +215,8 @@ INCLUDE ~tactics-remix/components/crypt_king.tpa~
 // Kensai Ryu's Random Wilderness Encounters                             //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @31 DESIGNATED 31 GROUP @3011 LABEL TacticsRemix-WildernessEncounters
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/wilderness_encounters.tpa~
 */
@@ -234,8 +234,8 @@ INCLUDE ~tactics-remix/components/dragons.tpa~
 // Kensai Ryu's Improved Copper Coronet                                  //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @17 DESIGNATED 17 GROUP @3011 LABEL TacticsRemix-CopperCoronet
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/copper_coronet.tpa~
 
@@ -244,8 +244,8 @@ INCLUDE ~tactics-remix/components/copper_coronet.tpa~
 // SimDing0's Improved Oasis                                             //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @18 DESIGNATED 18 GROUP @3011 LABEL TacticsRemix-Oasis
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/oasis.tpa~
 */
@@ -254,8 +254,8 @@ INCLUDE ~tactics-remix/components/oasis.tpa~
 // Mike Barnes' Improved Small Teeth Pass                                //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @19 DESIGNATED 19 GROUP @3011 LABEL TacticsRemix-SmallTeethPass
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/small_teeth_pass.tpa~
 
@@ -264,8 +264,8 @@ INCLUDE ~tactics-remix/components/small_teeth_pass.tpa~
 // Morpheus562's Improved Samia and Party in Windspear Hills Dungeon     //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @34 DESIGNATED 34 GROUP @3011 LABEL TacticsRemix-Samia
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/samia.tpa~
 */
@@ -274,8 +274,8 @@ INCLUDE ~tactics-remix/components/samia.tpa~
 // Morpheus562's Improved Planar Prison Bounty Hunters                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @35 DESIGNATED 35 GROUP @3011 LABEL TacticsRemix-PPBounty
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/pp_bounty.tpa~
 
@@ -284,8 +284,8 @@ INCLUDE ~tactics-remix/components/pp_bounty.tpa~
 // Mike Barnes' Improved North Forest                                    //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @20 DESIGNATED 20 GROUP @3011 LABEL TacticsRemix-NorthForest
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/north_forest.tpa~
 */
@@ -295,8 +295,8 @@ INCLUDE ~tactics-remix/components/north_forest.tpa~
 // Mike Barnes' Marching Mountains                                       //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @21 DESIGNATED 21 GROUP @3011 LABEL TacticsRemix-MarchingMountains
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/marching_mountains.tpa~
 */
@@ -306,8 +306,8 @@ INCLUDE ~tactics-remix/components/marching_mountains.tpa~
 // Tougher Druid Grove                                                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @22 DESIGNATED 22 GROUP @3011 LABEL TacticsRemix-DruidGrove
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/druid_grove.tpa~
 */
@@ -316,8 +316,8 @@ INCLUDE ~tactics-remix/components/druid_grove.tpa~
 // Morpheus562's Improved Drizzt (BGEE)                                  //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @29 DESIGNATED 29 GROUP @3011 LABEL TacticsRemix-DrizztBGEE
-
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @3002
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/drizzt_bgee.tpa~
 
@@ -325,8 +325,8 @@ INCLUDE ~tactics-remix/components/drizzt_bgee.tpa~
 // Morpheus562's Improved Drizzt (BG2EE)                                 //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @39 DESIGNATED 39 GROUP @3011 LABEL TacticsRemix-DrizztBG2EE
-
-REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3002
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/drizzt_bg2ee.tpa~
 
@@ -334,8 +334,8 @@ INCLUDE ~tactics-remix/components/drizzt_bg2ee.tpa~
 // Tougher Fire Giants                                                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @23 DESIGNATED 23 GROUP @3011 LABEL TacticsRemix-FireGiants
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/fire_giants.tpa~
 
@@ -343,8 +343,8 @@ INCLUDE ~tactics-remix/components/fire_giants.tpa~
 // Morpheus562's Tougher Githyanki                                       //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @32 DESIGNATED 32 GROUP @3011 LABEL TacticsRemix-Githyanki
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/githyanki.tpa~
 
@@ -352,8 +352,8 @@ INCLUDE ~tactics-remix/components/githyanki.tpa~
 // Morpheus562's Tougher Yuan-ti                                         //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @33 DESIGNATED 33 GROUP @3011 LABEL TacticsRemix-Yuanti
-
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/yuanti.tpa~
 
@@ -362,8 +362,8 @@ INCLUDE ~tactics-remix/components/yuanti.tpa~
 // Morpheus562's Improved General Enemies for IWDEE                      //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @36 DESIGNATED 36 GROUP @3011 LABEL TacticsRemix-IWDEEGeneralEnemies
-
-REQUIRE_PREDICATE GAME_IS ~iwdee~ @3003
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/iwdee_general_enemies.tpa~
 
@@ -371,8 +371,8 @@ INCLUDE ~tactics-remix/components/iwdee_general_enemies.tpa~
 // Morpheus562's IWDEE Tougher Yetis                                     //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @37 DESIGNATED 37 GROUP @3011 LABEL TacticsRemix-IWDEEYeti
-
-REQUIRE_PREDICATE GAME_IS ~iwdee~ @3003
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/iwdee_yeti.tpa~
 
@@ -380,8 +380,8 @@ INCLUDE ~tactics-remix/components/iwdee_yeti.tpa~
 // Morpheus562's IWDEE Tougher Shadows                                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @38 DESIGNATED 38 GROUP @3011 LABEL TacticsRemix-IWDEEShadow
-
-REQUIRE_PREDICATE GAME_IS ~iwdee~ @3003
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/iwdee_shadow.tpa~
 */
@@ -406,7 +406,8 @@ INCLUDE ~tactics-remix/components/hit_points.tpa~
 ////////////////////////////////////////////////////
 
 BEGIN @25 DESIGNATED 25 SUBCOMPONENT @24 GROUP @3012 LABEL TacticsRemix-HitPoints1 
-REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3000
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 OUTER_SET dmg_multiplier = 2 // x2 multiplier
 OUTER_SET dmg_bonus = 0      // Damage bonus +0
@@ -415,7 +416,8 @@ INCLUDE ~tactics-remix/components/hit_points.tpa~
 ////////////////////////////////////////////////////
 
 BEGIN @26 DESIGNATED 26 SUBCOMPONENT @24 GROUP @3012 LABEL TacticsRemix-HitPoints2 
-REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3000
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 OUTER_SET dmg_multiplier = 2 // x2 multiplier
 OUTER_SET dmg_bonus = 20     // Damage bonus +20
@@ -424,7 +426,8 @@ INCLUDE ~tactics-remix/components/hit_points.tpa~
 ////////////////////////////////////////////////////
 
 BEGIN @27 DESIGNATED 27 SUBCOMPONENT @24 GROUP @3012 LABEL TacticsRemix-HitPoints3 
-REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3000
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 OUTER_SET dmg_multiplier = 3 // x3 multiplier
 OUTER_SET dmg_bonus = 0      // Damage bonus +0
@@ -433,7 +436,8 @@ INCLUDE ~tactics-remix/components/hit_points.tpa~
 ////////////////////////////////////////////////////
 
 BEGIN @28 DESIGNATED 28 SUBCOMPONENT @24 GROUP @3012 LABEL TacticsRemix-HitPoints4 
-REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3000
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 OUTER_SET dmg_multiplier = 3 // x3 multiplier
 OUTER_SET dmg_bonus = 30     // Damage bonus +30
@@ -442,7 +446,8 @@ INCLUDE ~tactics-remix/components/hit_points.tpa~
 ////////////////////////////////////////////////////
 
 BEGIN @30 DESIGNATED 30 SUBCOMPONENT @24 GROUP @3012 LABEL TacticsRemix-HitPoints5 
-REQUIRE_PREDICATE (GAME_IS ~bg2ee eet~) @3000
+REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 OUTER_SET dmg_multiplier = ini_multiplier // ini multiplier
 OUTER_SET dmg_bonus = ini_set_bonus       // ini bonus
