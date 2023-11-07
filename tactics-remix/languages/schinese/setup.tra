@@ -1,0 +1,56 @@
+// Tactics Remix, American English
+
+@1 = ~The Ritual~
+@2 = ~"Kuroisan", the Acid Kensai~
+@3 = ~"Red Badge" Poison-Based Encounter~
+@4 = ~Gebhard Blucher's Lich in the Docks~
+@5 = ~Kensai Ryu's Gnome Fighter/Illusionist in the Docks~
+@6 = ~Kensai Ryu's Improved Crypt King~
+@7 = ~Improved TorGal and De'Arnisse Keep~
+@8 = ~Improved Sahuagin City~
+@9 = ~Improved Bodhi~
+@10 = ~Improved Irenicus~
+@11 = ~Improved Guarded Compound in the Temple District~
+@12 = ~Improved Twisted Rune~
+@13 = ~Gebhard Blucher's Improved Mae'Var~
+@14 = ~Gebhard Blucher's Improved Demon Knights~
+@15 = ~Kensai Ryu's Tougher Kangaxx and Guardians~
+@16 = ~Smarter Dragons~
+@17 = ~Kensai Ryu's Improved Copper Coronet~
+@18 = ~SimDing0's Improved Oasis~
+@19 = ~Mike Barnes' Improved Small Teeth Pass~
+@20 = ~Mike Barnes' Improved North Forest~
+@21 = ~Mike Barnes' Marching Mountains~
+@22 = ~Tougher Druid Grove~
+@23 = ~Tougher Fire Giants~
+@24 = ~Improve All Enemies Hit Points~
+@25 = ~Enemies Have x2 Hit Points~
+@26 = ~Enemies Have x2+20 Hit Points~
+@27 = ~Enemies Have x3 Hit Points~
+@28 = ~Enemies Have x3+30 Hit Points~
+@29 = ~Morpheus562's Improved Drizzt (BGEE)~
+@30 = ~Use ini Custom Enemy Hit Point Modifications~
+@31 = ~Kensai Ryu's Random Wilderness Encounters~
+@32 = ~Morpheus562's Tougher Githyanki~
+@33 = ~Morpheus562's Tougher Yuan-ti~
+@34 = ~Morpheus562's Improved Samia and Party in Windspear Hills Dungeon~
+@35 = ~Morpheus562's Improved Planar Prison Bounty Hunters~
+@36 = ~Morpheus562's Improved General AI for IWDEE~
+@37 = ~Morpheus562's IWDEE Tougher Yetis~
+@38 = ~Morpheus562's IWDEE Tougher Shadows~
+@39 = ~Morpheus562's Improved Drizzt (BG2EE)~
+@40 = ~Enemies Have 1.5x Hit Points~
+
+@3000 = ~Component requires BGII: EE or EET~
+@3001 = ~DLCMerger is needed before modding SoD games~
+@3002 = ~Component requires BG: EE or EET~
+@3003 = ~Component requires IWD: EE~
+@3004 = ~Mod Conflict~
+
+///////////////////////////////////////////////////////////////////////////
+// Groups                                                                //
+///////////////////////////////////////////////////////////////////////////
+@3010 = ~Add New Encounters - Install BEFORE SCS~
+@3011 = ~Update Existing Encounters - Install AFTER SCS~
+@3012 = ~Enemy Improvements - Install AFTER SCS~
+@3013 = ~IWDEE Components~

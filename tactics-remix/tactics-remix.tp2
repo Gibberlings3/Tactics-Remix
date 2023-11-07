@@ -57,6 +57,15 @@ LANGUAGE ~Español (Remix by alaisFcZ w/ original translation by Clan REO)~
          ~tactics-remix/languages/spanish/setup.tra~
          ~tactics-remix/languages/spanish/spell_descriptions.tra~
 
+LANGUAGE ~Chinese~
+         ~chinese~
+         ~tactics-remix/languages/schinese/cre_dialog.tra~
+         ~tactics-remix/languages/schinese/creatures.tra~
+         ~tactics-remix/languages/schinese/item_descriptions.tra~
+         ~tactics-remix/languages/schinese/script_dialog.tra~
+         ~tactics-remix/languages/schinese/setup.tra~
+         ~tactics-remix/languages/schinese/spell_descriptions.tra~
+
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 // Add New Encounters - Install Before SCS (GROUP 3010)                  //

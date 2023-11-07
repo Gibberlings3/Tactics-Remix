@@ -1,0 +1,9 @@
+// Tactics Remix, Spell Descriptions
+
+// Improved Irenicus
+@6000 = ~分解魔法~
+@6001 = ~魔法被分解~
+@6002 = ~分解的身体~
+
+// Tougher Yetis
+@6003 = ~恐惧凝视~
