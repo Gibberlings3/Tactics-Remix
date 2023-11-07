@@ -59,6 +59,12 @@ LANGUAGE ~Español (Remix by alaisFcZ w/ original translation by Clan REO)~
 
 LANGUAGE ~Chinese~
          ~chinese~
+         ~tactics-remix/languages/english/cre_dialog.tra~
+         ~tactics-remix/languages/english/creatures.tra~
+         ~tactics-remix/languages/english/item_descriptions.tra~
+         ~tactics-remix/languages/english/script_dialog.tra~
+         ~tactics-remix/languages/english/setup.tra~
+         ~tactics-remix/languages/english/spell_descriptions.tra~
          ~tactics-remix/languages/schinese/cre_dialog.tra~
          ~tactics-remix/languages/schinese/creatures.tra~
          ~tactics-remix/languages/schinese/item_descriptions.tra~
