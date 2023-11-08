@@ -2,12 +2,19 @@
 
 ## Version 0.7-beta
 
+December xx, 2023
+
+### Changed
+
+- Added Tougher Dragons component.
+
+## Version 0.6.2-beta
+
 November xx, 2023
 
 ### Changed
 
 - Added Chinese translation.
-- Added Tougher Dragons component.
 - Updated Lich in the Docks to not overwrite the area script if one already exists.
 
 ## Version 0.6.1-beta

@@ -239,11 +239,13 @@ INCLUDE ~tactics-remix/components/wilderness_encounters.tpa~
 ///////////////////////////////////////////////////////////////////////////
 // Smarter Dragons                                                       //
 ///////////////////////////////////////////////////////////////////////////
+/*
 BEGIN @16 DESIGNATED 16 GROUP @3011 LABEL TacticsRemix-Dragons
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/dragons.tpa~
+*/
 
 ///////////////////////////////////////////////////////////////////////////
 // Kensai Ryu's Improved Copper Coronet                                  //
