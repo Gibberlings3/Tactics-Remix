@@ -6,6 +6,7 @@ November xx, 2023
 
 ### Changed
 
+- Added Chinese translation.
 - Added Tougher Dragons component.
 - Updated Lich in the Docks to not overwrite the area script if one already exists.
 
