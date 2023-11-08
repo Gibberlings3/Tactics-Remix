@@ -7,7 +7,7 @@
 BACKUP ~tactics-remix/backup~
 AUTHOR ~morpheus562~
 
-VERSION ~v0.6.1-beta~
+VERSION ~v0.6.2-beta~
 README ~tactics-remix/readme.%LANGUAGE%.html~ ~tactics-remix/readme.html~
 AUTO_EVAL_STRINGS
 
