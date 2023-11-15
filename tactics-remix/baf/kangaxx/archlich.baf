@@ -2190,7 +2190,10 @@ IF
   !StateCheck(Myself,STATE_SILENCED)
 THEN
   RESPONSE #100
+    SetGlobalTimer("MO_SpellCastTimer","LOCALS",6)
+    SetInterrupt(FALSE)
     Spell(LastSeenBy(Myself),CLERIC_UNHOLY_WORD)  // SPPR715.SPL (Unholy Word)
+    SetInterrupt(TRUE)
 END
 
 IF
@@ -2218,7 +2221,10 @@ IF
   !StateCheck(Myself,STATE_SILENCED)
 THEN
   RESPONSE #100
+    SetGlobalTimer("MO_SpellCastTimer","LOCALS",6)
+    SetInterrupt(FALSE)
     Spell(LastSeenBy(Myself),CLERIC_UNHOLY_WORD)  // SPPR715.SPL (Unholy Word)
+    SetInterrupt(TRUE)
 END
 
 IF
@@ -2246,7 +2252,10 @@ IF
   !StateCheck(Myself,STATE_SILENCED)
 THEN
   RESPONSE #100
+    SetGlobalTimer("MO_SpellCastTimer","LOCALS",6)
+    SetInterrupt(FALSE)
     Spell(LastSeenBy(Myself),CLERIC_UNHOLY_WORD)  // SPPR715.SPL (Unholy Word)
+    SetInterrupt(TRUE)
 END
 
 IF
@@ -2274,7 +2283,10 @@ IF
   !StateCheck(Myself,STATE_SILENCED)
 THEN
   RESPONSE #100
+    SetGlobalTimer("MO_SpellCastTimer","LOCALS",6)
+    SetInterrupt(FALSE)
     Spell(LastSeenBy(Myself),CLERIC_UNHOLY_WORD)  // SPPR715.SPL (Unholy Word)
+    SetInterrupt(TRUE)
 END
 
 IF
@@ -2302,7 +2314,10 @@ IF
   !StateCheck(Myself,STATE_SILENCED)
 THEN
   RESPONSE #100
+    SetGlobalTimer("MO_SpellCastTimer","LOCALS",6)
+    SetInterrupt(FALSE)
     Spell(LastSeenBy(Myself),CLERIC_UNHOLY_WORD)  // SPPR715.SPL (Unholy Word)
+    SetInterrupt(TRUE)
 END
 
 IF
@@ -2330,7 +2345,10 @@ IF
   !StateCheck(Myself,STATE_SILENCED)
 THEN
   RESPONSE #100
+    SetGlobalTimer("MO_SpellCastTimer","LOCALS",6)
+    SetInterrupt(FALSE)
     Spell(LastSeenBy(Myself),CLERIC_UNHOLY_WORD)  // SPPR715.SPL (Unholy Word)
+    SetInterrupt(TRUE)
 END
 
 /////////////////////////////////////////////////////////////////////
