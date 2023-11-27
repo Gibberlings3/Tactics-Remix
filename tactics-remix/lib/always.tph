@@ -13,6 +13,7 @@ ACTION_IF !VARIABLE_IS_SET ~initialise~ BEGIN
   //SILENT
   OUTER_SET initialise=1
   OUTER_SET target_tracking=0
+  OUTER_SET ds_installed=0
 
 ///////////////////////////////////////////////////////////////////////////
 // Set up ini system                                                     //
