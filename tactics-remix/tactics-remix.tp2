@@ -85,6 +85,7 @@ BEGIN @2 DESIGNATED 2 GROUP @3010 LABEL TacticsRemix-Kuroisan
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/kuroisan.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -94,6 +95,7 @@ BEGIN @1 DESIGNATED 1 GROUP @3010 LABEL TacticsRemix-Ritual
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/ritual.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -103,6 +105,7 @@ BEGIN @3 DESIGNATED 3 GROUP @3010 LABEL TacticsRemix-RedBadge
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/red_badge.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -112,6 +115,7 @@ BEGIN @4 DESIGNATED 4 GROUP @3010 LABEL TacticsRemix-LichDocks
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/lich_docks.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -121,6 +125,7 @@ BEGIN @5 DESIGNATED 5 GROUP @3010 LABEL TacticsRemix-GnomeFI
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/gnomefi.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -147,6 +152,7 @@ BEGIN @8 DESIGNATED 8 GROUP @3011 LABEL TacticsRemix-Sahuagin
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/sahuagin.tpa~
 
 /* WILL NOT DO SINCE SCS ALREADY DOES THIS
@@ -167,6 +173,7 @@ BEGIN @10 DESIGNATED 10 GROUP @3011 LABEL TacticsRemix-Irenicus
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/irenicus.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -176,6 +183,7 @@ BEGIN @11 DESIGNATED 11 GROUP @3011 LABEL TacticsRemix-GuardedCompound
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/guarded_compound.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -185,6 +193,7 @@ BEGIN @12 DESIGNATED 12 GROUP @3011 LABEL TacticsRemix-TwistedRune
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/twisted_rune.tpa~
 
 /*
@@ -205,6 +214,7 @@ BEGIN @14 DESIGNATED 14 GROUP @3011 LABEL TacticsRemix-DemonKnights
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/demon_knights.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -214,6 +224,7 @@ BEGIN @15 DESIGNATED 15 GROUP @3011 LABEL TacticsRemix-Kangaxx
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/kangaxx.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -223,6 +234,7 @@ BEGIN @6 DESIGNATED 6 GROUP @3011 LABEL TacticsRemix-CryptKing
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/crypt_king.tpa~
 
 /*
@@ -254,6 +266,7 @@ BEGIN @17 DESIGNATED 17 GROUP @3011 LABEL TacticsRemix-CopperCoronet
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/copper_coronet.tpa~
 
 /*
@@ -274,6 +287,7 @@ BEGIN @19 DESIGNATED 19 GROUP @3011 LABEL TacticsRemix-SmallTeethPass
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/small_teeth_pass.tpa~
 
 /*
@@ -294,6 +308,7 @@ BEGIN @35 DESIGNATED 35 GROUP @3011 LABEL TacticsRemix-PPBounty
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/pp_bounty.tpa~
 
 /*
@@ -336,6 +351,7 @@ BEGIN @29 DESIGNATED 29 GROUP @3011 LABEL TacticsRemix-DrizztBGEE
 REQUIRE_PREDICATE GAME_IS ~bgee eet~ @3002
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/drizzt_bgee.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -345,6 +361,7 @@ BEGIN @39 DESIGNATED 39 GROUP @3011 LABEL TacticsRemix-DrizztBG2EE
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/drizzt_bg2ee.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -354,6 +371,7 @@ BEGIN @23 DESIGNATED 23 GROUP @3011 LABEL TacticsRemix-FireGiants
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/fire_giants.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -363,6 +381,7 @@ BEGIN @32 DESIGNATED 32 GROUP @3011 LABEL TacticsRemix-Githyanki
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/githyanki.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
@@ -372,6 +391,7 @@ BEGIN @33 DESIGNATED 33 GROUP @3011 LABEL TacticsRemix-Yuanti
 REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
+INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/yuanti.tpa~
 
 /*
