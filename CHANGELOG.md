@@ -7,6 +7,7 @@ December xx, 2023
 ### Changed
 
 - Added Tougher Dragons component.
+- Had profs in 2h sword and 2h weapon style reversed (Demon Knights). It's now corrected.
 
 ## Version 0.6.2-beta
 
