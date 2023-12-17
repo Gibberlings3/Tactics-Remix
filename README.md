@@ -2,7 +2,7 @@
 
 [![Latest Release](https://img.shields.io/github/v/release/gibberlings3/Tactics-Remix?include_prereleases)](https://github.com/Gibberlings3/Tactics-Remix/releases/latest)
 [![Github downloads (all releases)](https://img.shields.io/github/downloads/gibberlings3/Tactics-Remix/total.svg?color=informational)](https://github.com/gibberlings3/Tactics-Remix/releases)
-![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20chinese%20%7C%20french%20%7C%20spanish&color=informational)
+![Language](https://img.shields.io/static/v1?label=language&message=english%20%7C%20chinese%20%7C%20spanish&color=informational)
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20macos%20%7C%20linux&color=informational)
 
 [A Gibberlings Three Mod](https://www.gibberlings3.net/)
@@ -142,7 +142,6 @@ There are a couple options for the player to select to increase the HP of all en
 - Wes thank you for your permission to update such an amazing mod! I appreciate being a steward of your work, and I hope you find it enjoyable.
 - Gebhard Blucher, Kensai Ryu, Xyx, Mike Barnes, and Ishan, thank you for all your amazing work on the original Tactics mod. I hope you too enjoy the work I have put into it.
 - Cam for all of your help and assistance. The reasons are many, thank you.
-- JohnBob for providing the French translation.
 - alaisFcZ for providing the Spanish translation.
 - All those who assisted in testing and providing feedback! I appreciate every single one of you for all that you do!
 

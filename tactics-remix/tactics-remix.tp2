@@ -26,21 +26,6 @@ LANGUAGE ~English~
          ~tactics-remix/languages/english/script_dialog.tra~
          ~tactics-remix/languages/english/setup.tra~
          ~tactics-remix/languages/english/spell_descriptions.tra~
-		 
-LANGUAGE ~Francais (Remix by JohnBob w/ original translation by Ly Meng, Laurent Duvernet et Cocobard)~
-         ~french~
-         ~tactics-remix/languages/english/cre_dialog.tra~
-         ~tactics-remix/languages/english/creatures.tra~
-         ~tactics-remix/languages/english/item_descriptions.tra~
-         ~tactics-remix/languages/english/script_dialog.tra~
-         ~tactics-remix/languages/english/setup.tra~
-         ~tactics-remix/languages/english/spell_descriptions.tra~
-         ~tactics-remix/languages/french/cre_dialog.tra~
-         ~tactics-remix/languages/french/creatures.tra~
-         ~tactics-remix/languages/french/item_descriptions.tra~
-         ~tactics-remix/languages/french/script_dialog.tra~
-         ~tactics-remix/languages/french/setup.tra~
-         ~tactics-remix/languages/french/spell_descriptions.tra~
 
 LANGUAGE ~Español (Remix by alaisFcZ w/ original translation by Clan REO)~
          ~spanish~
