@@ -137,6 +137,9 @@ PLEASE NOTE: With my Skills and Abilities Proficiency overhaul and Forgotten Arm
 
 There are a couple options for the player to select to increase the HP of all enemies. There is an additional option to adjust enemy HP based on the ini file if the player does not like the pre-defined options. Friendly cast summons will NOT have their HP altered. 
 
+## Compatibility
+This mod is not compatible with Made In Heaven - Encounters and Quests mod.
+
 ## Special Thanks
 
 - Wes thank you for your permission to update such an amazing mod! I appreciate being a steward of your work, and I hope you find it enjoyable.
