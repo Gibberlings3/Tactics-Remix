@@ -21,6 +21,7 @@ COPY ~tactics-remix/spl/solak1.spl~  ~override~
           spwi403d
           spwi418d
           mobtr22
+          mobha48b
         BEGIN
           PATCH_IF FILE_EXISTS_IN_GAME ~%fireshield%.SPL~ THEN BEGIN
             LPF ADD_SPELL_EFFECT INT_VAR opcode = 206 target = 1 timing = 10 resist_dispel = 0 duration = 2 probability1 = 100 STR_VAR resource = ~%fireshield%~ END
