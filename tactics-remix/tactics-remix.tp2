@@ -348,6 +348,15 @@ INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/drizzt_bg2ee.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
+// Morpheus562's Improved Mutamin's Garden and Tougher Basilisks         //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @41 DESIGNATED 41 GROUP @3011 LABEL TacticsRemix-Basilisks
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @3002
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
+
+INCLUDE ~tactics-remix/components/basilisk.tpa~
+
+///////////////////////////////////////////////////////////////////////////
 // Tougher Fire Giants                                                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @23 DESIGNATED 23 GROUP @3011 LABEL TacticsRemix-FireGiants

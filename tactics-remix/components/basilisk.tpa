@@ -11,6 +11,13 @@
 // Movement Speed: +1                                                    //
 //                                                                       //
 ///////////////////////////////////////////////////////////////////////////
+
+// Melee Weapon
+COPY_EXISTING ~basill2.itm~ ~override~
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 dicesize = 6 dicenumber = 2 thac0_bonus = 2 damage_bonus = 3 damage_type = 1 END
+  LPF ADD_ITEM_EFFECT INT_VAR opcode = 12 type = 1 target = 2 parameter1 = 0 parameter2 = 2097152 timing = 1 resist_dispel = 0 probability1 = 100 dicenumber = 2 dicesize = 6 special = 1 END
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 126 target = 1 parameter1 = 1 parameter2 = 0 timing = 2 resist_dispel = 0 probability1 = 100 END
+
 ACTION_FOR_EACH lesser IN
       basill    // Mutamin, Durlag (exterior)
       basillsu  // Summons
@@ -30,12 +37,6 @@ ACTION_FOR_EACH lesser IN
       END
     END
 
-// Melee Weapon
-COPY_EXISTING ~basill2.itm~ ~override~
-  LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 dicesize = 6 dicenumber = 2 thac0_bonus = 2 damage_bonus = 3 damage_type = 1 END
-  LPF ADD_ITEM_EFFECT INT_VAR opcode = 12 type = 1 target = 2 parameter1 = 0 parameter2 = 2097152 timing = 1 resist_dispel = 0 probability1 = 100 dicenumber = 2 dicesize = 6 special = 1 END
-  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 126 target = 1 parameter1 = 1 parameter2 = 0 timing = 2 resist_dispel = 0 probability1 = 100 END
-
 ///////////////////////////////////////////////////////////////////////////
 // Update Greater Basilisks                                              //
 // Level: 15                                                             //
@@ -51,6 +52,16 @@ COPY_EXISTING ~basill2.itm~ ~override~
 // Immunity to Poison                                                    //
 //                                                                       //
 ///////////////////////////////////////////////////////////////////////////
+
+// Melee Weapon (Bite)
+COPY_EXISTING ~basilg2.itm~ ~override~
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 dicesize = 6 dicenumber = 2 thac0_bonus = 4 damage_bonus = 5 damage_type = 1 END
+  LPF ADD_ITEM_EFFECT INT_VAR opcode = 12 type = 1 target = 2 parameter1 = 0 parameter2 = 2097152 timing = 1 resist_dispel = 0 probability1 = 100 dicenumber = 4 dicesize = 6 special = 1 END
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 126 target = 1 parameter1 = 2 parameter2 = 0 timing = 2 resist_dispel = 0 probability1 = 100 END
+
+// Melee Weapon (Tail)
+COPY ~tactics-remix/itm/mo_bas1.itm~ ~override~ 
+
 ACTION_FOR_EACH greater IN
       basgrt01 // BG2, doesn't exist in game
       basilg   // Mutamin, Durlag (exterior), Candlekeep
@@ -67,9 +78,12 @@ ACTION_FOR_EACH greater IN
           WRITE_BYTE 0x24  120 // Current HP
           WRITE_BYTE 0x26  120 // Maximum HP
           WRITE_BYTE 0x52  6   // thac0
+          WRITE_BYTE 0x53  1   // APR
           WRITE_BYTE 0x238 20  // Strength
           WRITE_BYTE 0x23c 13  // Dexterity
           WRITE_BYTE 0x23d 16  // Constitution
-          REPLACE_CRE_ITEM ~AMUL22~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~ EQUIP // Periapt of Proof Against Poison
+          REPLACE_CRE_ITEM ~AMUL22~  #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~ EQUIP // Periapt of Proof Against Poison
+          REPLACE_CRE_ITEM ~mo_bas1~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~SHIELD~ EQUIP // Tail
       END
     END
+
