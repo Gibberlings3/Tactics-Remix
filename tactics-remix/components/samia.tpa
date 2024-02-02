@@ -10,7 +10,7 @@
 COPY_EXISTING ~samia.CRE~ ~override~
   WRITE_BYTE  0x24 130          // Current HP
   WRITE_BYTE  0x26 130          // Maximum HP
-  WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
   WRITE_ASCII 0x268 ~mo_sam~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~HELM04~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~HELMET~ EQUIP // Gift of Peace
   PATCH_IF !forgot_arm BEGIN
@@ -23,7 +23,7 @@ COPY_EXISTING ~samia.CRE~ ~override~
 COPY_EXISTING ~akae.CRE~ ~override~
   WRITE_BYTE  0x24  120         // Current HP
   WRITE_BYTE  0x26  120         // Maximum HP
-  WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
   WRITE_ASCII 0x260 ~~       #8 // Clear General Script
   WRITE_ASCII 0x268 ~mo_aka~ #8 // Add Default Script
   WRITE_BYTE  0x238 17          // Strength
@@ -39,8 +39,10 @@ COPY_EXISTING ~akae.CRE~ ~override~
 ///////////////////////////////////////////////////////////////////////////
 // Update Kaol (Mage)                                                    //
 ///////////////////////////////////////////////////////////////////////////
+/*
 COPY_EXISTING ~kaol.CRE~ ~override~
-  WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+*/
 
 ///////////////////////////////////////////////////////////////////////////
 // Update Chak (Ogre)                                                    //
@@ -48,7 +50,7 @@ COPY_EXISTING ~kaol.CRE~ ~override~
 COPY_EXISTING ~chak.CRE~ ~override~
   WRITE_BYTE  0x24  130         // Current HP
   WRITE_BYTE  0x26  130         // Maximum HP
-  WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
   WRITE_ASCII 0x268 ~mo_sam~ #8 // Add Default Script
   WRITE_BYTE  0x23d 18          // Constitution
   REPLACE_CRE_ITEM ~PLAT19~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~   EQUIP // Full Plate +2
@@ -57,7 +59,7 @@ COPY_EXISTING ~chak.CRE~ ~override~
 // Update Legdor (Cleric)                                                //
 ///////////////////////////////////////////////////////////////////////////
 COPY_EXISTING ~legdor.CRE~ ~override~
-  WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
   REPLACE_CRE_ITEM ~BLUN21~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP // Mace +2
   REPLACE_CRE_ITEM ~SHLD28~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~SHIELD~  EQUIP // Small Shield +2
   REPLACE_CRE_ITEM ~HELM01~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~HELMET~  EQUIP // Helmet
@@ -71,7 +73,7 @@ COPY_EXISTING ~legdor.CRE~ ~override~
 COPY_EXISTING ~deshar.CRE~ ~override~
   WRITE_BYTE  0x24  130         // Current HP
   WRITE_BYTE  0x26  130         // Maximum HP
-  WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
   WRITE_ASCII 0x268 ~mo_des~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~SW1H41~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP // Long Sword +2
 

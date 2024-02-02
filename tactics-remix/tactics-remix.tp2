@@ -275,7 +275,6 @@ REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 INCLUDE ~tactics-remix/components/initialize.tpa~
 INCLUDE ~tactics-remix/components/small_teeth_pass.tpa~
 
-/*
 ///////////////////////////////////////////////////////////////////////////
 // Morpheus562's Improved Samia and Party in Windspear Hills Dungeon     //
 ///////////////////////////////////////////////////////////////////////////
@@ -284,7 +283,6 @@ REQUIRE_PREDICATE GAME_IS ~bg2ee eet~ @3000
 REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 
 INCLUDE ~tactics-remix/components/samia.tpa~
-*/
 
 ///////////////////////////////////////////////////////////////////////////
 // Morpheus562's Improved Planar Prison Bounty Hunters                   //
