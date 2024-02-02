@@ -7,6 +7,8 @@ December xx, 2023
 ### Changed
 
 - Added Tougher Dragons component.
+- Added Morpheus562's Improved Samia and Party in Windspear Hills Dungeon component.
+- Added Morpheus562's Improved Mutamin's Garden and Tougher Basilisks component.
 - Had profs in 2h sword and 2h weapon style reversed (Demon Knights). It's now corrected.
 
 ## Version 0.6.2-beta
