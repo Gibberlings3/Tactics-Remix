@@ -1,0 +1,75 @@
+// Tactics Remix, Tougher Mutamin Garden (And Basilisks)
+
+///////////////////////////////////////////////////////////////////////////
+// Update Lesser Basilisks                                               //
+// Level: 8                                                              //
+// HP: 64                                                                //
+// Thac0: 13                                                             //
+// Dmg: 2d6+3 piercing, +2d6 poison                                      //
+// STR: 16                                                               //
+// CON: 15                                                               //
+// Movement Speed: +1                                                    //
+//                                                                       //
+///////////////////////////////////////////////////////////////////////////
+ACTION_FOR_EACH lesser IN
+      basill    // Mutamin, Durlag (exterior)
+      basillsu  // Summons
+      basles01  // BG2, doesn't exist in game
+      bpbasl01  // BG1, doesn't exist in game
+      plybass   // BG2, polymorph attack thing
+    BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%lesser%.CRE~ BEGIN
+        
+        COPY_EXISTING ~%lesser%.CRE~ ~override~
+          WRITE_BYTE 0x234  8  // Level
+          WRITE_BYTE 0x24  64  // Current HP
+          WRITE_BYTE 0x26  64  // Maximum HP
+          WRITE_BYTE 0x52  13  // thac0
+          WRITE_BYTE 0x238 16  // Strength
+          WRITE_BYTE 0x23d 15  // Constitution
+      END
+    END
+
+// Melee Weapon
+COPY_EXISTING ~basill2.itm~ ~override~
+  LPF ALTER_ITEM_HEADER INT_VAR header_type = 1 dicesize = 6 dicenumber = 2 thac0_bonus = 2 damage_bonus = 3 damage_type = 1 END
+  LPF ADD_ITEM_EFFECT INT_VAR opcode = 12 type = 1 target = 2 parameter1 = 0 parameter2 = 2097152 timing = 1 resist_dispel = 0 probability1 = 100 dicenumber = 2 dicesize = 6 special = 1 END
+  LPF ADD_ITEM_EQEFFECT INT_VAR opcode = 126 target = 1 parameter1 = 1 parameter2 = 0 timing = 2 resist_dispel = 0 probability1 = 100 END
+
+///////////////////////////////////////////////////////////////////////////
+// Update Greater Basilisks                                              //
+// Level: 15                                                             //
+// HP: 120                                                               //
+// Thac0: 6                                                              //
+// Bite: 2d6+5 piercing, +4d6 poison                                     //
+// Tail: 2d6+5 slashing, +7d6 poison (save vs. half)                     //
+// Spit Poison: ranged 5d6 poison (save vs. half)                        //
+// STR: 20                                                               //
+// DEX: 13                                                               //
+// CON: 16                                                               //
+// Movement Speed: +2                                                    //
+// Immunity to Poison                                                    //
+//                                                                       //
+///////////////////////////////////////////////////////////////////////////
+ACTION_FOR_EACH greater IN
+      basgrt01 // BG2, doesn't exist in game
+      basilg   // Mutamin, Durlag (exterior), Candlekeep
+      basilgsu // Summon
+      basilmut // Mutamin
+      basilnad // BG Warehouse
+      bd302bas // Bloodbark Grove
+      bpbasg01 // BG1, doesn't exist in game
+    BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%greater%.CRE~ BEGIN
+        
+        COPY_EXISTING ~%greater%.CRE~ ~override~
+          WRITE_BYTE 0x234 15  // Level
+          WRITE_BYTE 0x24  120 // Current HP
+          WRITE_BYTE 0x26  120 // Maximum HP
+          WRITE_BYTE 0x52  6   // thac0
+          WRITE_BYTE 0x238 20  // Strength
+          WRITE_BYTE 0x23c 13  // Dexterity
+          WRITE_BYTE 0x23d 16  // Constitution
+          REPLACE_CRE_ITEM ~AMUL22~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~ EQUIP // Periapt of Proof Against Poison
+      END
+    END
