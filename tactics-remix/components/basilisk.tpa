@@ -66,7 +66,7 @@ ACTION_FOR_EACH greater IN
       basgrt01 // BG2, doesn't exist in game
       basilg   // Mutamin, Durlag (exterior), Candlekeep
       basilgsu // Summon
-      basilmut // Mutamin
+      basilmut // Mutamin (needs to go hostile when attacked)
       basilnad // BG Warehouse
       bd302bas // Bloodbark Grove
       bpbasg01 // BG1, doesn't exist in game
@@ -87,3 +87,27 @@ ACTION_FOR_EACH greater IN
       END
     END
 
+///////////////////////////////////////////////////////////////////////////
+// Mutamin                                                               //
+// Level: 10                                                             //
+// HP: 40                                                                //
+// Thac0: 17                                                             //
+// Kit: Illusionist (Mandatory for Gnome)                                //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~%greater%.CRE~ ~override~
+  WRITE_BYTE 0x234 10            // Level
+  WRITE_BYTE 0x24  40            // Current HP
+  WRITE_BYTE 0x26  40            // Maximum HP
+  WRITE_BYTE 0x52  17            // thac0
+  WRITE_SHORT 0x246 0x0400       // Illusionist Kit
+  WRITE_ASCII 0x258 ~~        #8 // Clear Race Script
+  WRITE_ASCII 0x260 ~~        #8 // Clear General Script
+  WRITE_ASCII 0x268 ~mo_muta~ #8 // Add Default Script
+
+///////////////////////////////////////////////////////////////////////////
+// Copy .BCS file to override folder                                     //
+///////////////////////////////////////////////////////////////////////////
+COPY ~tactics-remix/baf/basilisk/mo_muta.baf~  ~override/mo_muta.bcs~
+     ~tactics-remix/baf/basilisk/gbasilsk.baf~ ~override/gbasilsk.bcs~
+     ~tactics-remix/baf/basilisk/lbasilsk.baf~ ~override/lbasilsk.bcs~
+  COMPILE_BAF_TO_BCS
