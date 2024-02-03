@@ -95,7 +95,7 @@ ACTION_FOR_EACH greater IN
 // Thac0: 17                                                             //
 // Kit: Illusionist (Mandatory for Gnome)                                //
 ///////////////////////////////////////////////////////////////////////////
-COPY_EXISTING ~%greater%.CRE~ ~override~
+COPY_EXISTING ~mutami.CRE~ ~override~
   WRITE_BYTE 0x234 10            // Level
   WRITE_BYTE 0x24  40            // Current HP
   WRITE_BYTE 0x26  40            // Maximum HP
