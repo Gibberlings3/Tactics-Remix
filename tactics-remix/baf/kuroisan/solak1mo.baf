@@ -24,6 +24,8 @@ END
 
 IF
   !Global("KuroiSpawn","GLOBAL",2)
+  PartyHasItem("solak1")
+  /*
   OR(6)
     HasItemEquiped("solak1",Player1)
     HasItemEquiped("solak1",Player2)
@@ -31,6 +33,7 @@ IF
     HasItemEquiped("solak1",Player4)
     HasItemEquiped("solak1",Player5)
     HasItemEquiped("solak1",Player6)
+  */
 THEN
   RESPONSE #100
     SetGlobal("KuroiSpawn","GLOBAL",2)
