@@ -105,6 +105,11 @@ COPY_EXISTING ~mutami.CRE~ ~override~
   WRITE_ASCII 0x260 ~~        #8 // Clear General Script
   WRITE_ASCII 0x268 ~mo_muta~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~AMUL22~  #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~ EQUIP // Periapt of Proof Against Poison
+  REPLACE_CRE_ITEM ~bull02~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER1~ EQUIP // Bullet +1
+  REPLACE_CRE_ITEM ~bull01~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER2~ // Bullet
+  REPLACE_CRE_ITEM ~slng02~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON2~ EQUIP // Sling +1
+  SET_BG2_PROFICIENCY ~PROFICIENCYQUARTERSTAFF~ 1
+  SET_BG2_PROFICIENCY ~PROFICIENCYSLING~ 1
 
 ///////////////////////////////////////////////////////////////////////////
 // Copy .BCS file to override folder                                     //
