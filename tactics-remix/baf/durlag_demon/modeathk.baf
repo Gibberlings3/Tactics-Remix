@@ -96,6 +96,16 @@ THEN
     Continue()
 END
 
+IF 
+  Global("Prep","LOCALS",1)
+  DifficultyLT(HARDEST)
+THEN 
+  RESPONSE #100
+    SetGlobal("Prep","LOCALS",2)
+    ApplySpell(Myself,WIZARD_HASTE)
+    Continue()
+END
+
 IF
   DifficultyLT(HARDEST)
   Global("MO_CheckDifficulty","LOCALS",0) 

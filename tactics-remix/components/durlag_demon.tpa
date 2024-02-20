@@ -6,6 +6,7 @@
 COPY_EXISTING ~deathk.cre~  ~override~
   WRITE_BYTE 0x24 150 // Current HP
   WRITE_BYTE 0x26 150 // Maximum HP
+  WRITE_BYTE 0x53 2   // 2 APR Base
   WRITE_ASCII 0x248 ~~         #8 // Override Script
   WRITE_ASCII 0x250 ~~         #8 // Clear Class Script
   WRITE_ASCII 0x258 ~~         #8 // Clear Race Script
