@@ -1,0 +1,11 @@
+/////////////////////////////////////////////////////////////////////
+// Unblock Exit (BG: EE)
+/////////////////////////////////////////////////////////////////////
+IF
+  Dead("deathk")
+  Global("DoorOpen","ar0516",0)
+THEN 
+    RESPONSE #100
+      TriggerActivation("Door0514",TRUE)
+      SetGlobal("DoorOpen","ar0516",1)
+END

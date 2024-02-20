@@ -1,0 +1,50 @@
+// Tactics Remix, Morpheus562's Improved Durlag's Demon Knight
+
+///////////////////////////////////////////////////////////////////////////
+// Demon Knight                                                          //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~deathk.cre~  ~override~
+  WRITE_BYTE 0x24 150 // Current HP
+  WRITE_BYTE 0x26 150 // Maximum HP
+  WRITE_ASCII 0x248 ~~         #8 // Override Script
+  WRITE_ASCII 0x250 ~~         #8 // Clear Class Script
+  WRITE_ASCII 0x258 ~~         #8 // Clear Race Script
+  WRITE_ASCII 0x260 ~~         #8 // Clear General Script
+  WRITE_ASCII 0x268 ~modeathk~ #8 // Add Default Script
+  REPLACE_CRE_ITEM ~RINGDEMN~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~LRING~ EQUIP
+  REPLACE_CRE_ITEM ~RING95~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~RRING~ EQUIP
+  REPLACE_CRE_ITEM ~BRAC10~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~GLOVES~  EQUIP // Gauntlet of Weapon Expertise
+  REPLACE_CRE_ITEM ~CHAN12~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~   EQUIP // Elven Chain
+  REMOVE_CRE_ITEM ~SHLD06~ // Large Shield +1
+  SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+  SET_BG2_PROFICIENCY ~PROFICIENCYTWOHANDEDSWORD~ 5
+  PATCH_IF GAME_IS ~bgee~ BEGIN
+    REPLACE_CRE_ITEM ~SW2H07~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // The World's Edge +3
+  END ELSE PATCH_IF GAME_IS ~eet~ BEGIN
+    REPLACE_CRE_ITEM ~SW2H07_~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // The World's Edge +3
+  END
+
+///////////////////////////////////////////////////////////////////////////
+// Chess King                                                            //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~king.cre~ ~override~
+  REPLACE_CRE_ITEM ~STAF18~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Quarterstaff +2
+  SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+  SET_BG2_PROFICIENCY ~PROFICIENCYQUARTERSTAFF~ 3
+  PATCH_IF GAME_IS ~bgee~ BEGIN
+    REMOVE_CRE_ITEM ~SW2H07~ // The World's Edge +3
+  END ELSE PATCH_IF GAME_IS ~eet~ BEGIN
+    REMOVE_CRE_ITEM ~SW2H07_~ // The World's Edge +3
+  END
+
+///////////////////////////////////////////////////////////////////////////
+// Copy .BCS file to override folder                                     //
+///////////////////////////////////////////////////////////////////////////
+ACTION_IF GAME_IS ~eet~ BEGIN
+  EXTEND_TOP ~bg0516.bcs~   ~tactics-remix/baf/durlag_demon/bg0516.baf~
+END ELSE ACTION_IF GAME_IS ~bgee~ BEGIN
+  EXTEND_TOP ~ar0516.bcs~   ~tactics-remix/baf/durlag_demon/ar0516.baf~
+END
+
+COPY ~tactics-remix/baf/durlag_demon/modeathk.baf~ ~override/modeathk.bcs~
+  COMPILE_BAF_TO_BCS

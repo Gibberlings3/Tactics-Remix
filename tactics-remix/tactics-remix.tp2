@@ -357,6 +357,15 @@ REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
 INCLUDE ~tactics-remix/components/basilisk.tpa~
 
 ///////////////////////////////////////////////////////////////////////////
+// Morpheus562's Improved Durlag's Demon Knight                          //
+///////////////////////////////////////////////////////////////////////////
+BEGIN @42 DESIGNATED 42 GROUP @3011 LABEL TacticsRemix-DurlagDemonKnight
+REQUIRE_PREDICATE GAME_IS ~bgee eet~ @3002
+REQUIRE_PREDICATE !FILE_EXISTS ~mih_eq/setup-mih_eq.tp2~ @3004
+
+INCLUDE ~tactics-remix/components/durlag_demon.tpa~
+
+///////////////////////////////////////////////////////////////////////////
 // Tougher Fire Giants                                                   //
 ///////////////////////////////////////////////////////////////////////////
 BEGIN @23 DESIGNATED 23 GROUP @3011 LABEL TacticsRemix-FireGiants

@@ -2,7 +2,7 @@
 
 ## Version 0.7-beta
 
-December xx, 2023
+Month xx, 2024
 
 ### Changed
 
