@@ -56,16 +56,22 @@ COPY_EXISTING ~chak.CRE~ ~override~
   REPLACE_CRE_ITEM ~PLAT19~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~   EQUIP // Full Plate +2
 
 ///////////////////////////////////////////////////////////////////////////
-// Update Legdor (Cleric)                                                //
+// Update Legdoril (Cleric)                                              //
 ///////////////////////////////////////////////////////////////////////////
 COPY_EXISTING ~legdor.CRE~ ~override~
+  WRITE_BYTE  0x238 14          // Strength
+  WRITE_BYTE  0x23b 15          // Wisdom
+  WRITE_BYTE  0x23d 16          // Constitution
   //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  WRITE_ASCII 0x268 ~mo_leg~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~BLUN21~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP // Mace +2
   REPLACE_CRE_ITEM ~SHLD28~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~SHIELD~  EQUIP // Small Shield +2
   REPLACE_CRE_ITEM ~HELM01~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~HELMET~  EQUIP // Helmet
   PATCH_IF !forgot_arm BEGIN
     REPLACE_CRE_ITEM ~OHPLAT50~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~   EQUIP // Plate Mail +2
   END
+  SET_BG2_PROFICIENCY ~PROFICIENCYMACE~ 1
+  SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
 
 ///////////////////////////////////////////////////////////////////////////
 // Update Ferric Ironblade (Fighter/Thief)                               //
@@ -159,8 +165,17 @@ COPY_EXISTING ~AR1202.BCS~ ~override~
     END
 BUT_ONLY
 
+//-------------------------------------------------------------------------
+// Add in IWD spells to scripts
+ACTION_IF iwd_divine BEGIN
+  INCLUDE ~tactics-remix/lib/mo_leg.tph~  // Legdoril
+END
+
+//-------------------------------------------------------------------------
+// baf to bcs
 COPY ~tactics-remix/baf/samia/mo_run.baf~  ~override/mo_run.bcs~
      ~tactics-remix/baf/samia/mo_sam.baf~  ~override/mo_sam.bcs~
      ~tactics-remix/baf/samia/mo_aka.baf~  ~override/mo_aka.bcs~
      ~tactics-remix/baf/samia/mo_des.baf~  ~override/mo_des.bcs~
+     ~tactics-remix/baf/samia/mo_leg.baf~  ~override/mo_leg.bcs~
   COMPILE_BAF_TO_BCS

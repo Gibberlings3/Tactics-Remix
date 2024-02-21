@@ -56,6 +56,13 @@ ACTION_IF !VARIABLE_IS_SET ~initialise~ BEGIN
       OUTER_SET iwdification=0
    END
 
+   // IWD - Divine Spells
+   ACTION_IF MOD_IS_INSTALLED ~iwdification/setup-iwdification.tp2~ 40 OR MOD_IS_INSTALLED ~setup-stratagems.tp2~ ~1510~ BEGIN
+      OUTER_SET iwd_divine=1
+   END ELSE BEGIN
+      OUTER_SET iwd_divine=0
+   END
+
    // Detect Sword Coast Stratagems - Initialize AI
    ACTION_IF MOD_IS_INSTALLED ~setup-stratagems.tp2~ ~5900~ BEGIN
       OUTER_SET scs_ai=1
