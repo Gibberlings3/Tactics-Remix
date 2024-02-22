@@ -10,7 +10,7 @@
 COPY_EXISTING ~samia.CRE~ ~override~
   WRITE_BYTE  0x24 130          // Current HP
   WRITE_BYTE  0x26 130          // Maximum HP
-  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  WRITE_ASCII 0x258 ~~       #8 // Add Race Script
   WRITE_ASCII 0x268 ~mo_sam~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~HELM04~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~HELMET~ EQUIP // Gift of Peace
   PATCH_IF !forgot_arm BEGIN
@@ -23,7 +23,8 @@ COPY_EXISTING ~samia.CRE~ ~override~
 COPY_EXISTING ~akae.CRE~ ~override~
   WRITE_BYTE  0x24  120         // Current HP
   WRITE_BYTE  0x26  120         // Maximum HP
-  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  WRITE_ASCII 0x250 ~~       #8 // Clear Class Script
+  WRITE_ASCII 0x258 ~~       #8 // Clear Race Script
   WRITE_ASCII 0x260 ~~       #8 // Clear General Script
   WRITE_ASCII 0x268 ~mo_aka~ #8 // Add Default Script
   WRITE_BYTE  0x238 17          // Strength
@@ -37,12 +38,14 @@ COPY_EXISTING ~akae.CRE~ ~override~
   SET_BG2_PROFICIENCY ~PROFICIENCY2WEAPON~ 3
 
 ///////////////////////////////////////////////////////////////////////////
-// Update Kaol (Mage)                                                    //
+// Update Kaol (Sorcerer)                                                //
 ///////////////////////////////////////////////////////////////////////////
-/*
 COPY_EXISTING ~kaol.CRE~ ~override~
-  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
-*/
+  WRITE_SHORT 0x246 0x0000      // No Kit
+  WRITE_ASCII 0x250 ~~       #8 // Class Script
+  WRITE_ASCII 0x260 ~~       #8 // Clear General Script
+  WRITE_ASCII 0x268 ~mo_kao~ #8 // Add Default Script
+  WRITE_BYTE  0x273 19          // Sorcerer Class
 
 ///////////////////////////////////////////////////////////////////////////
 // Update Chak (Ogre)                                                    //
@@ -50,7 +53,8 @@ COPY_EXISTING ~kaol.CRE~ ~override~
 COPY_EXISTING ~chak.CRE~ ~override~
   WRITE_BYTE  0x24  130         // Current HP
   WRITE_BYTE  0x26  130         // Maximum HP
-  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  WRITE_ASCII 0x258 ~~       #8 // Clear Race Script
+  WRITE_ASCII 0x260 ~~       #8 // Clear General Script
   WRITE_ASCII 0x268 ~mo_sam~ #8 // Add Default Script
   WRITE_BYTE  0x23d 18          // Constitution
   REPLACE_CRE_ITEM ~PLAT19~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~   EQUIP // Full Plate +2
@@ -62,7 +66,8 @@ COPY_EXISTING ~legdor.CRE~ ~override~
   WRITE_BYTE  0x238 14          // Strength
   WRITE_BYTE  0x23b 15          // Wisdom
   WRITE_BYTE  0x23d 16          // Constitution
-  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  WRITE_ASCII 0x250 ~~       #8 // Clear Class Script
+  WRITE_ASCII 0x258 ~~       #8 // Clear Race Script
   WRITE_ASCII 0x268 ~mo_leg~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~BLUN21~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP // Mace +2
   REPLACE_CRE_ITEM ~SHLD28~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~SHIELD~  EQUIP // Small Shield +2
@@ -79,7 +84,8 @@ COPY_EXISTING ~legdor.CRE~ ~override~
 COPY_EXISTING ~deshar.CRE~ ~override~
   WRITE_BYTE  0x24  130         // Current HP
   WRITE_BYTE  0x26  130         // Maximum HP
-  //WRITE_ASCII 0x258 ~mo_run~ #8 // Add Race Script
+  WRITE_ASCII 0x250 ~~       #8 // Clear Class Script
+  WRITE_ASCII 0x258 ~~       #8 // Clear Race Script
   WRITE_ASCII 0x268 ~mo_des~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~SW1H41~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP // Long Sword +2
 
@@ -178,4 +184,5 @@ COPY ~tactics-remix/baf/samia/mo_run.baf~  ~override/mo_run.bcs~
      ~tactics-remix/baf/samia/mo_aka.baf~  ~override/mo_aka.bcs~
      ~tactics-remix/baf/samia/mo_des.baf~  ~override/mo_des.bcs~
      ~tactics-remix/baf/samia/mo_leg.baf~  ~override/mo_leg.bcs~
+     ~tactics-remix/baf/samia/mo_kao.baf~  ~override/mo_kao.bcs~
   COMPILE_BAF_TO_BCS
