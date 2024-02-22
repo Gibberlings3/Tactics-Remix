@@ -69,9 +69,9 @@ COPY_EXISTING ~legdor.CRE~ ~override~
   WRITE_ASCII 0x250 ~~       #8 // Clear Class Script
   WRITE_ASCII 0x258 ~~       #8 // Clear Race Script
   WRITE_ASCII 0x268 ~mo_leg~ #8 // Add Default Script
-  REPLACE_CRE_ITEM ~BLUN21~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP // Mace +2
-  REPLACE_CRE_ITEM ~SHLD28~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~SHIELD~  EQUIP // Small Shield +2
-  REPLACE_CRE_ITEM ~HELM01~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~HELMET~  EQUIP // Helmet
+  REPLACE_CRE_ITEM ~BLUN21~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Mace +2
+  REPLACE_CRE_ITEM ~SHLD28~ #0 #0 #0 ~UNSTEALABLE~ ~SHIELD~  EQUIP // Small Shield +2
+  REPLACE_CRE_ITEM ~HELM01~ #0 #0 #0 ~UNSTEALABLE~ ~HELMET~  EQUIP // Helmet
   PATCH_IF !forgot_arm BEGIN
     REPLACE_CRE_ITEM ~OHPLAT50~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~ARMOR~   EQUIP // Plate Mail +2
   END
@@ -87,7 +87,7 @@ COPY_EXISTING ~deshar.CRE~ ~override~
   WRITE_ASCII 0x250 ~~       #8 // Clear Class Script
   WRITE_ASCII 0x258 ~~       #8 // Clear Race Script
   WRITE_ASCII 0x268 ~mo_des~ #8 // Add Default Script
-  REPLACE_CRE_ITEM ~SW1H41~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON1~ EQUIP // Long Sword +2
+  REPLACE_CRE_ITEM ~SW1H41~ #0 #0 #0 ~UNSTEALABLE~ ~WEAPON1~ EQUIP // Long Sword +2
 
 ///////////////////////////////////////////////////////////////////////////
 // Update Rat2 so it can be killed via script                            //
