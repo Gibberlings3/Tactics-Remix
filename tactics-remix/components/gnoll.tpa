@@ -1,0 +1,85 @@
+// Tactics Remix, Morpheus562's Improved Gnoll Stronghold and Tougher Gnolls 
+
+///////////////////////////////////////////////////////////////////////////
+// Import                                                                //
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+// Improve Gnolls                                                        //
+///////////////////////////////////////////////////////////////////////////
+
+// Ludrug is gnoll5.cre. Not currently captured by below
+///////////////////////////////////////////////////////////////////////////
+// Update Gnoll                                                          //
+// Level: 2                                                              //
+// HP: 20                                                                //
+// Thac0: 19                                                             //
+// STR: 14                                                               //
+// DEX: 12                                                               //
+// CON: 11                                                               //
+// INT: 6                                                                //
+// WIS: 10                                                               //
+// CHA: 7                                                                //
+// Leave scripts alone, SCS handles well enough                          //
+//                                                                       //
+///////////////////////////////////////////////////////////////////////////
+ACTION_FOR_EACH gnoll IN
+      aegnoll  // windspear hills
+      dagnoll  // Ust Natha
+      gnoll    // generic gnoll bgee
+      gnoll01  // not found in game (bg2ee)
+      gnoll02  // not found in game, +1 halberd
+      gnoll03  // Mgnl.2da
+      gnoll04  // Mgnl.2da
+      gnoll05  // not found in game, +1 halberd
+      gnoll2   // not found in game
+      gnoll3   // not found in game
+      gnoll5a  // Found with Ludrug. Need to update class script
+      gnoll_b  // generic gnoll
+      gnoll_bb // bandits, special override
+      gnolld   // drizzt gnolls, special race
+      gnollper // perdue sword
+      gnoltal2 // bandit camp (cave)
+      gnlwar01 // spawngrp.2da
+    BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%gnoll%.CRE~ BEGIN
+        
+        COPY_EXISTING ~%gnoll%.CRE~ ~override~
+          WRITE_BYTE 0x234  2  // Level
+          WRITE_BYTE 0x24  20  // Current HP
+          WRITE_BYTE 0x26  20  // Maximum HP
+          WRITE_BYTE 0x52  19  // thac0
+          WRITE_BYTE 0x238 14  // Strength
+          WRITE_BYTE 0x23a  6  // Intelligence
+          WRITE_BYTE 0x23b 10  // Wisdom
+          WRITE_BYTE 0x23c 12  // Dexterity
+          WRITE_BYTE 0x23d 11  // Constitution
+          WRITE_BYTE 0x23e  7  // Charisma
+          SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+          SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 2
+      END
+    END
+
+//-------------------------------------------------------------------------
+// Update Gnoll Slasher
+
+//-------------------------------------------------------------------------
+// Update Gnoll Veteran
+
+//-------------------------------------------------------------------------
+// Update Gnoll Elite
+
+//-------------------------------------------------------------------------
+// Update Flind
+
+///////////////////////////////////////////////////////////////////////////
+// Create Gnoll Shaman                                                   //
+///////////////////////////////////////////////////////////////////////////
+
+
+///////////////////////////////////////////////////////////////////////////
+// Copy .BCS file to override folder                                     //
+///////////////////////////////////////////////////////////////////////////
+COPY ~tactics-remix/baf/sahuagin/mosah01.baf~ ~override/mosah01.bcs~
+  COMPILE_BAF_TO_BCS
