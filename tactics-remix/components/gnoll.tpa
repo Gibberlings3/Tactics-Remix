@@ -9,7 +9,8 @@
 // Improve Gnolls                                                        //
 ///////////////////////////////////////////////////////////////////////////
 
-// Ludrug is gnoll5.cre. Not currently captured by below
+//Find and place named gnolls.
+
 ///////////////////////////////////////////////////////////////////////////
 // Update Gnoll                                                          //
 // Level: 2                                                              //
@@ -50,6 +51,7 @@ ACTION_FOR_EACH gnoll IN
           WRITE_BYTE 0x24  20  // Current HP
           WRITE_BYTE 0x26  20  // Maximum HP
           WRITE_BYTE 0x52  19  // thac0
+          WRITE_BYTE 0x53  1   // APR
           WRITE_BYTE 0x238 14  // Strength
           WRITE_BYTE 0x23a  6  // Intelligence
           WRITE_BYTE 0x23b 10  // Wisdom
@@ -61,17 +63,133 @@ ACTION_FOR_EACH gnoll IN
       END
     END
 
-//-------------------------------------------------------------------------
-// Update Gnoll Slasher
+///////////////////////////////////////////////////////////////////////////
+// Update Gnoll Slasher                                                  //
+// Level: 3                                                              //
+// HP: 30                                                                //
+// Thac0: 18                                                             //
+// STR: 16                                                               //
+// DEX: 14                                                               //
+// CON: 16                                                               //
+// INT: 10                                                               //
+// WIS: 10                                                               //
+// CHA: 9                                                                //
+// Leave scripts alone, SCS handles well enough                          //
+//                                                                       //
+///////////////////////////////////////////////////////////////////////////
+ACTION_FOR_EACH slasher IN
+      bdshem03 // SoD, Tomb Safehouse
+      gnoll_d  // bgee generic
+      gnoltal3 // bandit camp
+      gnlsla01 // spawngrp.2da
+    BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%slasher%.CRE~ BEGIN
+        
+        COPY_EXISTING ~%slasher%.CRE~ ~override~
+          WRITE_BYTE 0x234  3  // Level
+          WRITE_BYTE 0x24  30  // Current HP
+          WRITE_BYTE 0x26  30  // Maximum HP
+          WRITE_BYTE 0x52  18  // thac0
+          WRITE_BYTE 0x53  1   // APR
+          WRITE_BYTE 0x238 16  // Strength
+          WRITE_BYTE 0x23a 10  // Intelligence
+          WRITE_BYTE 0x23b 10  // Wisdom
+          WRITE_BYTE 0x23c 14  // Dexterity
+          WRITE_BYTE 0x23d 16  // Constitution
+          WRITE_BYTE 0x23e  9  // Charisma
+          SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+          SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 3
+      END
+    END
 
-//-------------------------------------------------------------------------
-// Update Gnoll Veteran
+///////////////////////////////////////////////////////////////////////////
+// Update Gnoll Veteran                                                  //
+// Level: 4                                                              //
+// HP: 40                                                                //
+// Thac0: 17                                                             //
+// STR: 17                                                               //
+// DEX: 14                                                               //
+// CON: 16                                                               //
+// INT: 10                                                               //
+// WIS: 10                                                               //
+// CHA: 9                                                                //
+// Leave scripts alone, SCS handles well enough                          //
+//                                                                       //
+///////////////////////////////////////////////////////////////////////////
+ACTION_FOR_EACH veteran IN
+      gnoll_e  // bgee generic
+      gnoll_eb // bandit camp
+      gnoltal4 // bandit camp, cave
+      gnoll5   // Ludrug
+      gnlvet01 // spawngrp.2da
+    BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%veteran%.CRE~ BEGIN
+        
+        COPY_EXISTING ~%veteran%.CRE~ ~override~
+          WRITE_BYTE 0x234  3  // Level
+          WRITE_BYTE 0x24  30  // Current HP
+          WRITE_BYTE 0x26  30  // Maximum HP
+          WRITE_BYTE 0x52  18  // thac0
+          WRITE_BYTE 0x53  1   // APR
+          WRITE_BYTE 0x238 17  // Strength
+          WRITE_BYTE 0x23a 10  // Intelligence
+          WRITE_BYTE 0x23b 10  // Wisdom
+          WRITE_BYTE 0x23c 14  // Dexterity
+          WRITE_BYTE 0x23d 16  // Constitution
+          WRITE_BYTE 0x23e  9  // Charisma
+          SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+          SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 3
+      END
+    END
 
-//-------------------------------------------------------------------------
-// Update Gnoll Elite
+///////////////////////////////////////////////////////////////////////////
+// Update Gnoll Elite                                                    //
+// Level: 5                                                              //
+// HP: 50                                                                //
+// Thac0: 16                                                             //
+// STR: 18/5                                                             //
+// DEX: 14                                                               //
+// CON: 16                                                               //
+// INT: 10                                                               //
+// WIS: 10                                                               //
+// CHA: 9                                                                //
+// Leave scripts alone, SCS handles well enough                          //
+//                                                                       //
+///////////////////////////////////////////////////////////////////////////
+ACTION_FOR_EACH elite IN
+      gnoll_a  // bgee generic
+      gnollsu
+      gnoltal1
+      gnleli01
+      ohngnel1
+      ohngnel2
+      //palkni03 // He is found in BG2EE Windspear and will not include here to keep special
+    BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%elite%.CRE~ BEGIN
+        
+        COPY_EXISTING ~%elite%.CRE~ ~override~
+          WRITE_BYTE 0x234  5  // Level
+          WRITE_BYTE 0x24  50  // Current HP
+          WRITE_BYTE 0x26  50  // Maximum HP
+          WRITE_BYTE 0x52  16  // thac0
+          WRITE_BYTE 0x53  1   // APR
+          WRITE_BYTE 0x238 18  // Strength
+          WRITE_BYTE 0x239  5  // Strength bonus
+          WRITE_BYTE 0x23a 10  // Intelligence
+          WRITE_BYTE 0x23b 10  // Wisdom
+          WRITE_BYTE 0x23c 14  // Dexterity
+          WRITE_BYTE 0x23d 16  // Constitution
+          WRITE_BYTE 0x23e  9  // Charisma
+          SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+          SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 3
+      END
+    END
 
 //-------------------------------------------------------------------------
 // Update Flind
+
+//-------------------------------------------------------------------------
+// Update Chieftain
 
 ///////////////////////////////////////////////////////////////////////////
 // Create Gnoll Shaman                                                   //
