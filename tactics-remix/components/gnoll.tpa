@@ -158,11 +158,11 @@ ACTION_FOR_EACH veteran IN
 ///////////////////////////////////////////////////////////////////////////
 ACTION_FOR_EACH elite IN
       gnoll_a  // bgee generic
-      gnollsu
-      gnoltal1
-      gnleli01
-      ohngnel1
-      ohngnel2
+      gnollsu  // summoned
+      gnoltal1 // bandit camp
+      gnleli01 // spawngrp.2da
+      ohngnel1 // neera wild forest
+      ohngnel2 // neera wild forest
       //palkni03 // He is found in BG2EE Windspear and will not include here to keep special
     BEGIN
       ACTION_IF FILE_EXISTS_IN_GAME ~%elite%.CRE~ BEGIN
@@ -185,8 +185,54 @@ ACTION_FOR_EACH elite IN
       END
     END
 
+///////////////////////////////////////////////////////////////////////////
+// Update Flind                                                          //
+// Level: 5                                                              //
+// HP: 50                                                                //
+// Thac0: 16                                                             //
+// STR: 18/25                                                            //
+// DEX: 14                                                               //
+// CON: 16                                                               //
+// INT: 10                                                               //
+// WIS: 10                                                               //
+// CHA: 9                                                                //
+// Leave scripts alone, SCS handles well enough                          //
+//                                                                       //
+///////////////////////////////////////////////////////////////////////////
+ACTION_FOR_EACH flind IN
+      flind    // bgee generic
+      flind_a  // not in game
+      flind_b  // not in game
+      flind_c  // not in game
+      flindb   // bandit camp
+      flintal1 // bandit camp and peldvale
+      plyflind // shapeshift
+      gnlfli01 // not in game
+    BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%flind%.CRE~ BEGIN
+        
+        COPY_EXISTING ~%flind%.CRE~ ~override~
+          WRITE_BYTE 0x234  5  // Level
+          WRITE_BYTE 0x24  50  // Current HP
+          WRITE_BYTE 0x26  50  // Maximum HP
+          WRITE_BYTE 0x52  16  // thac0
+          WRITE_BYTE 0x53  1   // APR
+          WRITE_BYTE 0x238 18  // Strength
+          WRITE_BYTE 0x239 25  // Strength bonus
+          WRITE_BYTE 0x23a 10  // Intelligence
+          WRITE_BYTE 0x23b 10  // Wisdom
+          WRITE_BYTE 0x23c 14  // Dexterity
+          WRITE_BYTE 0x23d 16  // Constitution
+          WRITE_BYTE 0x23e  9  // Charisma
+          SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2
+          SET_BG2_PROFICIENCY ~PROFICIENCYLONGSWORD~ 3
+      END
+    END
+
+// update flind1.itm
+
 //-------------------------------------------------------------------------
-// Update Flind
+// Update Captain
 
 //-------------------------------------------------------------------------
 // Update Chieftain
