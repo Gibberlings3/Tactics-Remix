@@ -542,3 +542,46 @@ Requires:
  12 Strength
 
 Weight: 7~
+
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+// Halberds                                                              //
+///////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+// Halberd                                                               //
+///////////////////////////////////////////////////////////////////////////
+@50100 = ~Halberd~
+@50101 = ~By far the oldest and most often used polearm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length. The axe blade is balanced at the rear with a fluke and surmounted by a sharp spike, usually of quadrangular design. The fluke is sometimes replaced by a hook used to dismount cavalry. A halberd can be best described as a cross between a spear and an axe.
+
+STATISTICS:
+
+Damage: 1d10
+Damage type: Piercing or slashing
+Speed Factor: 9
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 15~
+
+///////////////////////////////////////////////////////////////////////////
+// Will of Atar +1 (NWN2)                                                //
+///////////////////////////////////////////////////////////////////////////
+@50102 = ~Will of Atar +1~
+@50103 = ~These weapons bear the mark of Atar of the Flame, high shaman of a northern cult that fell under the influence of a creature from the plane of fire. What this entity received in exchange for creating such powerful items is unknown.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d10+1, +1 fire damage
+Damage type: Piercing
+Speed Factor: 8
+Proficiency Type: Halberd
+Type: Two-handed
+Requires:
+ 13 Strength
+
+Weight: 14~

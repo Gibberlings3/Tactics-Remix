@@ -3,7 +3,15 @@
 ///////////////////////////////////////////////////////////////////////////
 // Import                                                                //
 ///////////////////////////////////////////////////////////////////////////
-
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~mohal02.itm~ THEN BEGIN
+  COPY ~tactics-remix/itm/MOHAL02.ITM~ ~override/MOHAL02.ITM~
+    SAY NAME1 @50100
+    SAY NAME2 @50102
+    SAY UNIDENTIFIED_DESC @50101
+    SAY DESC @50103
+    WRITE_ASCII 0x58 chalb06
+    WRITE_LONG 0x34 3000
+END
 
 ///////////////////////////////////////////////////////////////////////////
 // Improve Gnolls                                                        //
@@ -229,13 +237,59 @@ ACTION_FOR_EACH flind IN
       END
     END
 
-// update flind1.itm
+// Update Flind weapon
+ACTION_IF FILE_EXISTS_IN_GAME ~flind1.itm~ BEGIN
+  COPY_EXISTING ~flind1.itm~ ~override~
+    LPF ALTER_ITEM_HEADER INT_VAR header_type=1 dicesize=10 dicenumber=1 damage_type=3 END
+END
 
-//-------------------------------------------------------------------------
-// Update Captain
+///////////////////////////////////////////////////////////////////////////
+// Update Gnoll Chieftain                                                //
+// Level: 6                                                              //
+// HP: 60                                                                //
+// Thac0: 15                                                             //
+// STR: 18/60                                                            //
+// DEX: 16                                                               //
+// CON: 18                                                               //
+// INT: 10                                                               //
+// WIS: 10                                                               //
+// CHA: 9                                                                //
+// Leave scripts alone, SCS handles well enough                          //
+//                                                                       //
+///////////////////////////////////////////////////////////////////////////
+ACTION_FOR_EACH chieftain IN
+      gnoll_c  // bgee generic
+    BEGIN
+      ACTION_IF FILE_EXISTS_IN_GAME ~%chieftain%.CRE~ BEGIN
+        
+        COPY_EXISTING ~%chieftain%.CRE~ ~override~
+          WRITE_BYTE 0x234  6  // Level
+          WRITE_BYTE 0x24  60  // Current HP
+          WRITE_BYTE 0x26  60  // Maximum HP
+          WRITE_BYTE 0x52  15  // thac0
+          WRITE_BYTE 0x53  1   // APR
+          WRITE_BYTE 0x238 18  // Strength
+          WRITE_BYTE 0x239 60  // Strength bonus
+          WRITE_BYTE 0x23a 10  // Intelligence
+          WRITE_BYTE 0x23b 10  // Wisdom
+          WRITE_BYTE 0x23c 16  // Dexterity
+          WRITE_BYTE 0x23d 18  // Constitution
+          WRITE_BYTE 0x23e  9  // Charisma
+          SET_BG2_PROFICIENCY ~PROFICIENCY2HANDED~ 2
+          SET_BG2_PROFICIENCY ~PROFICIENCYHALBERD~ 4
+      END
+    END
 
-//-------------------------------------------------------------------------
-// Update Chieftain
+COPY_EXISTING ~gnoll_c.cre~ ~override/mognlc.cre~
+  REPLACE_CRE_ITEM ~mohal02~ #0 #0 #0 ~UNSTEALABLE~ ~INV1~ // Will of Atar +1
+
+ACTION_IF GAME_IS ~bgee~ BEGIN
+  COPY_EXISTING ~ar5100.are~ ~override~
+    LPF ALTER_AREA_ACTOR STR_VAR actor_name=~Gnoll~ match_cre_file=~gnoll_c~ cre_file=~mognlc~ END
+END ELSE ACTION_IF GAME_IS ~EET~ BEGIN
+  COPY_EXISTING ~bg5100.are~ ~override~
+    LPF ALTER_AREA_ACTOR STR_VAR actor_name=~Gnoll~ match_cre_file=~gnoll_c~ cre_file=~mognlc~ END
+END
 
 ///////////////////////////////////////////////////////////////////////////
 // Create Gnoll Shaman                                                   //
