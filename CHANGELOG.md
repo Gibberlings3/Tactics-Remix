@@ -9,6 +9,7 @@ Month xx, 2024
 - Added Tougher Dragons component.
 - Added Morpheus562's Improved Samia and Party in Windspear Hills Dungeon component.
 - Added Morpheus562's Improved Mutamin's Garden and Tougher Basilisks component.
+- Added Morpheus562's Improved Gnoll Stronghold and Gnolls component.
 - Added Morpheus562's Improved Durlag's Demon Knight.
 - Had profs in 2h sword and 2h weapon style reversed (Demon Knights). It's now corrected.
 
