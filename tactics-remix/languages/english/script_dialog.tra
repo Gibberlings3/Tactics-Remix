@@ -28,3 +28,7 @@
 // Dragons
 @5200 = ~Come my minions, kill this intruder!~
 @5201 = ~Enough, you die today!~
+
+// Gnoll Shaman
+@5300 = ~Yeenoghu favors us!~
+@5301 = ~We have Yeenoghu's blessing!~

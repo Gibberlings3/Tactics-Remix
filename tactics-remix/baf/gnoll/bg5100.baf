@@ -1,0 +1,14 @@
+IF
+	Global("MO_Spawn01","bg5100",0)
+THEN
+	RESPONSE #100
+		SetGlobal("MO_Spawn01","bg5100",1)
+		CreateCreature("MOGNLS",[2488.1163],W)  // Gnoll Shaman
+		CreateCreature("MOGNLS",[1813.870],SW)  // Gnoll Shaman
+		CreateCreature("MOGNLS",[1816.403],NE)  // Gnoll Shaman
+		CreateCreature("MOGNLS",[2786.611],SW)  // Gnoll Shaman
+		CreateCreature("MOGNLS",[715.233],S)    // Gnoll Shaman
+		CreateCreature("MOGNLC",[1890.389],NE)  // Gnoll Chieftain
+		CreateCreature("GNOLL_E",[1949.408],NE) // Gnoll Veteran
+		CreateCreature("GNOLL_E",[1839.364],NE) // Gnoll Veteran
+END

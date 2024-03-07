@@ -17,8 +17,6 @@ END
 // Improve Gnolls                                                        //
 ///////////////////////////////////////////////////////////////////////////
 
-//Find and place named gnolls.
-
 ///////////////////////////////////////////////////////////////////////////
 // Update Gnoll                                                          //
 // Level: 2                                                              //
@@ -283,21 +281,31 @@ ACTION_FOR_EACH chieftain IN
 COPY_EXISTING ~gnoll_c.cre~ ~override/mognlc.cre~
   REPLACE_CRE_ITEM ~mohal02~ #0 #0 #0 ~UNSTEALABLE~ ~INV1~ // Will of Atar +1
 
-ACTION_IF GAME_IS ~bgee~ BEGIN
-  COPY_EXISTING ~ar5100.are~ ~override~
-    LPF ALTER_AREA_ACTOR STR_VAR actor_name=~Gnoll~ match_cre_file=~gnoll_c~ cre_file=~mognlc~ END
-END ELSE ACTION_IF GAME_IS ~EET~ BEGIN
-  COPY_EXISTING ~bg5100.are~ ~override~
-    LPF ALTER_AREA_ACTOR STR_VAR actor_name=~Gnoll~ match_cre_file=~gnoll_c~ cre_file=~mognlc~ END
-END
-
 ///////////////////////////////////////////////////////////////////////////
 // Create Gnoll Shaman                                                   //
+// Level: 4                                                              //
+// HP: 32                                                                //
+// Thac0: 18                                                             //
+// STR: 11                                                               //
+// DEX: 12                                                               //
+// CON: 12                                                               //
+// INT: 9                                                                //
+// WIS: 14                                                               //
+// CHA: 8                                                                //
+//                                                                       //
 ///////////////////////////////////////////////////////////////////////////
-
+COPY ~tactics-remix/cre/MOGNLS.CRE~ ~override/MOGNLS.CRE~
+  SAY NAME1 @2043
+  SAY NAME2 @2043
 
 ///////////////////////////////////////////////////////////////////////////
 // Copy .BCS file to override folder                                     //
 ///////////////////////////////////////////////////////////////////////////
-COPY ~tactics-remix/baf/sahuagin/mosah01.baf~ ~override/mosah01.bcs~
+ACTION_IF GAME_IS ~bgee~ BEGIN
+  EXTEND_BOTTOM ~AR5100.bcs~ ~tactics-remix/baf/gnoll/ar5100.baf~
+END ELSE ACTION_IF GAME_IS ~EET~ BEGIN
+  EXTEND_BOTTOM ~BG5100.bcs~ ~tactics-remix/baf/gnoll/bg5100.baf~
+END
+
+COPY ~tactics-remix/baf/gnoll/mognls.baf~ ~override/mognls.bcs~
   COMPILE_BAF_TO_BCS
