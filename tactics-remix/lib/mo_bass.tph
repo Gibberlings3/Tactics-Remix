@@ -1,0 +1,15 @@
+COPY ~tactics-remix/baf/bassilus/mo_bass.baf~ ~tactics-remix/baf/bassilus/mo_bass.baf~
+
+///////////////////////////////////////////////////////////////////////////
+// Update Prebuffs                                                       //
+///////////////////////////////////////////////////////////////////////////
+  LPF REPLACE_MULTILINE
+    INT_VAR
+    strict = 1
+    verbose = 0
+    STR_VAR
+    pattern = ~~~~~// IWD Prebuffs~~~~~
+    string = ~~~~~ApplySpell(Myself,CLERIC_RECITATION)
+    ApplySpell(Myself,CLERIC_PRAYER)
+    ApplySpell(Myself,CLERIC_ENTROPY_SHIELD)~~~~~ //"
+  END

@@ -1,0 +1,31 @@
+// Tactics Remix, Morpheus562's Improved Bassilus
+
+///////////////////////////////////////////////////////////////////////////
+// Bassilus                                                              //
+// Level: 12                                                             //
+// HP: 78                                                                //
+// Thac0: 14                                                             //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~bassil.CRE~ ~override~
+  WRITE_BYTE 0x234 12            // Level
+  WRITE_BYTE 0x24  78            // Current HP
+  WRITE_BYTE 0x26  78            // Maximum HP
+  WRITE_BYTE 0x52  14            // thac0
+  WRITE_ASCII 0x258 ~~        #8 // Clear Race Script
+  WRITE_ASCII 0x260 ~~        #8 // Clear General Script
+  WRITE_ASCII 0x268 ~mo_bass~ #8 // Add Default Script
+  REPLACE_CRE_ITEM ~SHLD04~ #0 #0 #0 ~UNSTEALABLE~ ~SHIELD~ EQUIP // Medium Shield +1
+  SET_BG2_PROFICIENCY ~PROFICIENCYWARHAMMER~ 1
+  SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
+
+//-------------------------------------------------------------------------
+// Add in IWD spells to scripts
+ACTION_IF iwd_divine BEGIN
+  INCLUDE ~tactics-remix/lib/mo_bass.tph~
+END
+
+///////////////////////////////////////////////////////////////////////////
+// Copy .BCS file to override folder                                     //
+///////////////////////////////////////////////////////////////////////////
+COPY ~tactics-remix/baf/basilisk/mo_bass.baf~  ~override/mo_bass.bcs~
+  COMPILE_BAF_TO_BCS
