@@ -11,6 +11,7 @@ Month xx, 2024
 - Added Morpheus562's Improved Mutamin's Garden and Tougher Basilisks component.
 - Added Morpheus562's Improved Gnoll Stronghold and Tougher Gnolls component.
 - Added Morpheus562's Improved Durlag's Demon Knight.
+- Added Morpheus562's Improved Bassilus.
 - Had profs in 2h sword and 2h weapon style reversed (Demon Knights). It's now corrected.
 
 ## Version 0.6.2-beta

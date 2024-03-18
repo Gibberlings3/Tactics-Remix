@@ -27,5 +27,5 @@ END
 ///////////////////////////////////////////////////////////////////////////
 // Copy .BCS file to override folder                                     //
 ///////////////////////////////////////////////////////////////////////////
-COPY ~tactics-remix/baf/basilisk/mo_bass.baf~  ~override/mo_bass.bcs~
+COPY ~tactics-remix/baf/bassilus/mo_bass.baf~ ~override/mo_bass.bcs~
   COMPILE_BAF_TO_BCS
