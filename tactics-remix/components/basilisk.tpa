@@ -45,7 +45,7 @@ ACTION_FOR_EACH lesser IN
 // Thac0: 6                                                              //
 // Bite: 2d6+5 piercing, +4d6 poison                                     //
 // Tail: 2d6+5 slashing, +7d6 poison (save vs. half)                     //
-// Spit Poison: ranged 5d6 poison (save vs. half)                        //
+// Spit Poison (ranged): 1d4 missile, 5d6 poison (save vs. half)         //
 // STR: 20                                                               //
 // DEX: 13                                                               //
 // CON: 16                                                               //
@@ -62,6 +62,9 @@ COPY_EXISTING ~basilg2.itm~ ~override~
 
 // Melee Weapon (Tail)
 COPY ~tactics-remix/itm/mo_bas1.itm~ ~override~ 
+
+// Ranged Weapon
+COPY ~tactics-remix/itm/mo_bas2.itm~ ~override~ 
 
 ACTION_FOR_EACH greater IN
       basgrt01 // BG2, doesn't exist in game
@@ -85,6 +88,7 @@ ACTION_FOR_EACH greater IN
           WRITE_BYTE 0x23d 16  // Constitution
           REPLACE_CRE_ITEM ~AMUL22~  #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~AMULET~ EQUIP // Periapt of Proof Against Poison
           REPLACE_CRE_ITEM ~mo_bas1~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~SHIELD~ EQUIP // Tail
+          REPLACE_CRE_ITEM ~mo_bas2~ #0 #0 #0 ~UNSTEALABLE&UNDROPPABLE~ ~WEAPON2~      // Spit Poison
       END
     END
 
