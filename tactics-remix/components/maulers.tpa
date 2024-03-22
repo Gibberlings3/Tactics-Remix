@@ -53,6 +53,15 @@ COPY_EXISTING ~wilf.CRE~ ~override~
   SET_BG2_PROFICIENCY ~PROFICIENCYWARHAMMER~ 1
   SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
 
+///////////////////////////////////////////////////////////////////////////
+// Update Nader (Thief)                                                  //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~nader.CRE~ ~override~
+  WRITE_BYTE  0x24 42           // Current HP
+  WRITE_BYTE  0x26 42           // Maximum HP
+  WRITE_ASCII 0x268 ~mo_nad~ #8 // Add Default Script
+  REPLACE_CRE_ITEM ~arow07~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~ EQUIP // Arrow of Dispelling
+  SET_BG2_PROFICIENCY ~PROFICIENCYSHORTBOW~ 1
 
 //-------------------------------------------------------------------------
 // Add in IWD spells to scripts
@@ -65,4 +74,5 @@ END
 COPY ~tactics-remix/baf/maulers/mo_gre.baf~  ~override/mo_gre.bcs~
      ~tactics-remix/baf/maulers/mo_par.baf~  ~override/mo_par.bcs~
      ~tactics-remix/baf/maulers/mo_wil.baf~  ~override/mo_wil.bcs~
+     ~tactics-remix/baf/maulers/mo_nad.baf~  ~override/mo_nad.bcs~
   COMPILE_BAF_TO_BCS
