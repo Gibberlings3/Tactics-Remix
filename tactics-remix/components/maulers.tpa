@@ -1,0 +1,68 @@
+// Tactics Remix, Morpheus562's Improved Maulers of Undermountain
+
+///////////////////////////////////////////////////////////////////////////
+// Import                                                                //
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+// Update Gretek (Fighter)                                                //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~gretek.CRE~ ~override~
+  WRITE_BYTE  0x24 90           // Current HP
+  WRITE_BYTE  0x26 90           // Maximum HP
+  WRITE_BYTE  0x52 12           // thac0
+  WRITE_BYTE  0x53  7           // 3/2 APR Base
+  WRITE_ASCII 0x250 ~~       #8 // Clear Class Script
+  WRITE_ASCII 0x258 ~~       #8 // Add Race Script
+  WRITE_ASCII 0x260 ~~       #8 // Clear General Script
+  WRITE_ASCII 0x268 ~mo_gre~ #8 // Add Default Script
+  REPLACE_CRE_ITEM ~HELM01~ #0 #0 #0 ~UNSTEALABLE~ ~HELMET~ EQUIP // Helmet
+  REPLACE_CRE_ITEM ~SHLD05~ #0 #0 #0 ~UNSTEALABLE~ ~SHIELD~ EQUIP // Large Shield +1
+  SET_BG2_PROFICIENCY ~PROFICIENCYAXE~ 5
+  SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
+
+///////////////////////////////////////////////////////////////////////////
+// Update Pargus (Fighter(7)->Mage(8))                                   //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~pargus.CRE~ ~override~
+  WRITE_BYTE  0x24 76           // Current HP
+  WRITE_BYTE  0x26 76           // Maximum HP
+  WRITE_BYTE  0x52 14           // thac0
+  WRITE_BYTE  0x53  7           // 3/2 APR Base
+  WRITE_BYTE  0x234 7           // Fighter Level
+  WRITE_BYTE  0x235 8           // Wizard Level
+  WRITE_ASCII 0x258 ~~       #8 // Add Race Script
+  WRITE_ASCII 0x268 ~mo_par~ #8 // Add Default Script
+  REPLACE_CRE_ITEM ~CHAN12~   #0 #0 #0 ~UNSTEALABLE~ ~ARMOR~  EQUIP // Elven Chain Mail
+  REPLACE_CRE_ITEM ~BDBRAC09~ #0 #0 #0 ~UNSTEALABLE~ ~GLOVES~ EQUIP // Gauntlets of Weapon Skill
+  SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2
+  SET_BG2_PROFICIENCY ~PROFICIENCYLONGSWORD~ 5
+
+///////////////////////////////////////////////////////////////////////////
+// Update Wilf (Fighter(7)->Cleric(8))                                   //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~wilf.CRE~ ~override~
+  WRITE_BYTE  0x24 78           // Current HP
+  WRITE_BYTE  0x26 78           // Maximum HP
+  WRITE_BYTE  0x52 14           // thac0
+  WRITE_BYTE  0x53  7           // 3/2 APR Base
+  WRITE_BYTE  0x234 7           // Fighter Level
+  WRITE_BYTE  0x235 8           // Cleric Level
+  WRITE_ASCII 0x258 ~~       #8 // Add Race Script
+  WRITE_ASCII 0x268 ~mo_wil~ #8 // Add Default Script
+  SET_BG2_PROFICIENCY ~PROFICIENCYWARHAMMER~ 1
+  SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
+
+
+//-------------------------------------------------------------------------
+// Add in IWD spells to scripts
+ACTION_IF iwd_divine BEGIN
+  INCLUDE ~tactics-remix/lib/mo_leg.tph~  // Legdoril
+END
+
+//-------------------------------------------------------------------------
+// baf to bcs
+COPY ~tactics-remix/baf/maulers/mo_gre.baf~  ~override/mo_gre.bcs~
+     ~tactics-remix/baf/maulers/mo_par.baf~  ~override/mo_par.bcs~
+     ~tactics-remix/baf/maulers/mo_wil.baf~  ~override/mo_wil.bcs~
+  COMPILE_BAF_TO_BCS
