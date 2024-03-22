@@ -1,0 +1,14 @@
+COPY ~tactics-remix/baf/maulers/mo_wil.baf~ ~tactics-remix/baf/maulers/mo_wil.baf~
+
+///////////////////////////////////////////////////////////////////////////
+// Update Prebuffs                                                       //
+///////////////////////////////////////////////////////////////////////////
+  LPF REPLACE_MULTILINE
+    INT_VAR
+    strict = 1
+    verbose = 0
+    STR_VAR
+    pattern = ~~~~~// IWD Prebuffs~~~~~
+    string = ~~~~~ApplySpell(Myself,CLERIC_RECITATION)
+    ApplySpell(Myself,CLERIC_PRAYER)~~~~~ //"
+  END

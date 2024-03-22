@@ -57,7 +57,7 @@ COPY_EXISTING ~wilf.CRE~ ~override~
 //-------------------------------------------------------------------------
 // Add in IWD spells to scripts
 ACTION_IF iwd_divine BEGIN
-  INCLUDE ~tactics-remix/lib/mo_leg.tph~  // Legdoril
+  INCLUDE ~tactics-remix/lib/mo_wil.tph~  // Wilf
 END
 
 //-------------------------------------------------------------------------
