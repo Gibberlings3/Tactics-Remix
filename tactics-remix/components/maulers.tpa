@@ -18,7 +18,7 @@ COPY_EXISTING ~gretek.CRE~ ~override~
   WRITE_ASCII 0x268 ~mo_gre~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~HELM01~ #0 #0 #0 ~UNSTEALABLE~ ~HELMET~ EQUIP // Helmet
   REPLACE_CRE_ITEM ~SHLD05~ #0 #0 #0 ~UNSTEALABLE~ ~SHIELD~ EQUIP // Large Shield +1
-  SET_BG2_PROFICIENCY ~PROFICIENCYAXE~ 5
+  SET_BG2_PROFICIENCY ~PROFICIENCYAXE~ 4
   SET_BG2_PROFICIENCY ~PROFICIENCYSWORDANDSHIELD~ 2
 
 ///////////////////////////////////////////////////////////////////////////
@@ -36,7 +36,7 @@ COPY_EXISTING ~pargus.CRE~ ~override~
   REPLACE_CRE_ITEM ~CHAN12~   #0 #0 #0 ~UNSTEALABLE~ ~ARMOR~  EQUIP // Elven Chain Mail
   REPLACE_CRE_ITEM ~BDBRAC09~ #0 #0 #0 ~UNSTEALABLE~ ~GLOVES~ EQUIP // Gauntlets of Weapon Skill
   SET_BG2_PROFICIENCY ~PROFICIENCYSINGLEWEAPON~ 2
-  SET_BG2_PROFICIENCY ~PROFICIENCYLONGSWORD~ 5
+  SET_BG2_PROFICIENCY ~PROFICIENCYLONGSWORD~ 4
 
 ///////////////////////////////////////////////////////////////////////////
 // Update Wilf (Fighter(7)->Cleric(8))                                   //
@@ -62,6 +62,25 @@ COPY_EXISTING ~nader.CRE~ ~override~
   WRITE_ASCII 0x268 ~mo_nad~ #8 // Add Default Script
   REPLACE_CRE_ITEM ~arow07~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~ EQUIP // Arrow of Dispelling
   SET_BG2_PROFICIENCY ~PROFICIENCYSHORTBOW~ 1
+
+///////////////////////////////////////////////////////////////////////////
+// Update Arlin (Mage)                                                   //
+///////////////////////////////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+// Update Caturak (Fighter - Ranged)                                     //
+///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~catura.CRE~ ~override~
+  WRITE_BYTE  0x24  80          // Current HP
+  WRITE_BYTE  0x26  80          // Maximum HP
+  WRITE_BYTE  0x52  13          // thac0
+  WRITE_BYTE  0x53   7          // 3/2 APR Base
+  WRITE_BYTE  0x234  8          // Fighter Level
+  WRITE_BYTE  0x23c 16          // Dexterity
+  WRITE_ASCII 0x268 ~mo_nad~ #8 // Add Default Script
+  WRITE_BYTE  0x273  2          // Fighter Class
+  REPLACE_CRE_ITEM ~arow10~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER3~ EQUIP // Arrow of Piercing
+  SET_BG2_PROFICIENCY ~PROFICIENCYLONGBOW~ 4
 
 //-------------------------------------------------------------------------
 // Add in IWD spells to scripts
