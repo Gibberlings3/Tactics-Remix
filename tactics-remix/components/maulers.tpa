@@ -66,6 +66,10 @@ COPY_EXISTING ~nader.CRE~ ~override~
 ///////////////////////////////////////////////////////////////////////////
 // Update Arlin (Mage)                                                   //
 ///////////////////////////////////////////////////////////////////////////
+COPY_EXISTING ~arlin.CRE~ ~override~
+  WRITE_BYTE  0x24  28           // Current HP
+  WRITE_BYTE  0x26  28           // Maximum HP
+  WRITE_SHORT 0x246 0x0080       // Conjurer Kit
 
 ///////////////////////////////////////////////////////////////////////////
 // Update Caturak (Fighter - Ranged)                                     //
