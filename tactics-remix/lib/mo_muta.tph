@@ -1,0 +1,13 @@
+COPY ~tactics-remix/baf/basilisk/mo_muta.baf~ ~tactics-remix/baf/basilisk/mo_muta.baf~
+
+///////////////////////////////////////////////////////////////////////////
+// Update Prebuffs                                                       //
+///////////////////////////////////////////////////////////////////////////
+  LPF REPLACE_MULTILINE
+    INT_VAR
+    strict = 1
+    verbose = 0
+    STR_VAR
+    pattern = ~~~~~WIZARD_REMOVE_MAGIC~~~~~
+    string = ~~~~~WIZARD_DISPEL_MAGIC~~~~~ //"
+  END

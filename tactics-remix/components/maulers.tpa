@@ -101,6 +101,12 @@ ACTION_IF iwd_divine BEGIN
 END
 
 //-------------------------------------------------------------------------
+// Update Symbolic Name for Remove Magic
+ACTION_IF GAME_IS ~bgee~ BEGIN
+  INCLUDE ~tactics-remix/lib/mo_arl.tph~  // Arlin
+END
+
+//-------------------------------------------------------------------------
 // baf to bcs
 COPY ~tactics-remix/baf/maulers/mo_gre.baf~  ~override/mo_gre.bcs~
      ~tactics-remix/baf/maulers/mo_par.baf~  ~override/mo_par.bcs~

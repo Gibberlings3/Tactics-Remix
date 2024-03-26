@@ -115,6 +115,12 @@ COPY_EXISTING ~mutami.CRE~ ~override~
   SET_BG2_PROFICIENCY ~PROFICIENCYQUARTERSTAFF~ 1
   SET_BG2_PROFICIENCY ~PROFICIENCYSLING~ 1
 
+//-------------------------------------------------------------------------
+// Update Symbolic Name for Remove Magic
+ACTION_IF GAME_IS ~bgee~ BEGIN
+  INCLUDE ~tactics-remix/lib/mo_muta.tph~  // Mutamin
+END
+
 ///////////////////////////////////////////////////////////////////////////
 // Copy .BCS file to override folder                                     //
 ///////////////////////////////////////////////////////////////////////////
