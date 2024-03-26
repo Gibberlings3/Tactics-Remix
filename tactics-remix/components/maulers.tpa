@@ -104,6 +104,7 @@ END
 // Update Symbolic Name for Remove Magic
 ACTION_IF GAME_IS ~bgee~ BEGIN
   INCLUDE ~tactics-remix/lib/mo_arl.tph~  // Arlin
+  INCLUDE ~tactics-remix/lib/mo_par.tph~  // Pargus
 END
 
 //-------------------------------------------------------------------------
