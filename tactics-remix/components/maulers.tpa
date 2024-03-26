@@ -67,9 +67,17 @@ COPY_EXISTING ~nader.CRE~ ~override~
 // Update Arlin (Mage)                                                   //
 ///////////////////////////////////////////////////////////////////////////
 COPY_EXISTING ~arlin.CRE~ ~override~
-  WRITE_BYTE  0x24  28           // Current HP
-  WRITE_BYTE  0x26  28           // Maximum HP
-  WRITE_SHORT 0x246 0x0080       // Conjurer Kit
+  WRITE_BYTE  0x24  32          // Current HP
+  WRITE_BYTE  0x26  32          // Maximum HP
+  WRITE_SHORT 0x246 0x0080      // Conjurer Kit
+  WRITE_BYTE  0x234 8           // Level
+  WRITE_ASCII 0x258 ~~       #8 // Add Race Script
+  WRITE_ASCII 0x268 ~mo_arl~ #8 // Add Default Script
+  REPLACE_CRE_ITEM ~bull02~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER1~ EQUIP // Bullet +1
+  REPLACE_CRE_ITEM ~bull01~ #40 #0 #0 ~UNSTEALABLE~ ~QUIVER2~ // Bullet
+  REPLACE_CRE_ITEM ~slng02~ #0 #0 #0  ~UNSTEALABLE~ ~WEAPON2~ EQUIP // Sling +1
+  SET_BG2_PROFICIENCY ~PROFICIENCYQUARTERSTAFF~ 1
+  SET_BG2_PROFICIENCY ~PROFICIENCYSLING~ 1
 
 ///////////////////////////////////////////////////////////////////////////
 // Update Caturak (Fighter - Ranged)                                     //
@@ -98,4 +106,5 @@ COPY ~tactics-remix/baf/maulers/mo_gre.baf~  ~override/mo_gre.bcs~
      ~tactics-remix/baf/maulers/mo_par.baf~  ~override/mo_par.bcs~
      ~tactics-remix/baf/maulers/mo_wil.baf~  ~override/mo_wil.bcs~
      ~tactics-remix/baf/maulers/mo_nad.baf~  ~override/mo_nad.bcs~
+     ~tactics-remix/baf/maulers/mo_arl.baf~  ~override/mo_arl.bcs~
   COMPILE_BAF_TO_BCS
