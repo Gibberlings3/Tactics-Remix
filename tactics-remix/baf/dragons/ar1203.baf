@@ -7,9 +7,9 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("MO_InitialSpawn","AR1203",1)
-    SetGlobalTimer("MO_SpawnGroupOne","AR1203",6)
-    SetGlobalTimer("MO_SpawnGroupTwo","AR1203",2)
-    SetGlobalTimer("MO_SpawnGroupThree","AR1203",4)
+    SetGlobalTimer("MO_SpawnGroupOne","AR1203",12)
+    SetGlobalTimer("MO_SpawnGroupTwo","AR1203",4)
+    SetGlobalTimer("MO_SpawnGroupThree","AR1203",8)
     CreateCreature("MOKOBO01",[1134.1485],NE)
     CreateCreature("MOKOBO02",[1369.1648],NE)
     CreateCreature("MOKOBO03",[1893.1434],SW)
@@ -22,13 +22,13 @@ IF
   GlobalTimerExpired("MO_SpawnGroupOne","AR1203")
 THEN
   RESPONSE #50
-    SetGlobalTimer("MO_SpawnGroupOne","AR1203",6)
+    SetGlobalTimer("MO_SpawnGroupOne","AR1203",8)
     CreateCreature("MOKOBO01",[1134.1485],NE)
     CreateCreature("MOKOBO02",[1369.1648],NE)
     CreateCreature("MOKOBO03",[1893.1434],SW)
     CreateCreature("MOKOBO04",[1632.1255],SW)
   RESPONSE #50
-    SetGlobalTimer("MO_SpawnGroupOne","AR1203",6)
+    SetGlobalTimer("MO_SpawnGroupOne","AR1203",8)
     CreateCreature("MOKOBO03",[860.1242],NE)
     CreateCreature("MOKOBO02",[1640.1831],NE)
     CreateCreature("MOKOBO04",[2204.1689],SW)
@@ -40,12 +40,12 @@ IF
   GlobalTimerExpired("MO_SpawnGroupTwo","AR1203")
 THEN
   RESPONSE #50
-    SetGlobalTimer("MO_SpawnGroupTwo","AR1203",6)
+    SetGlobalTimer("MO_SpawnGroupTwo","AR1203",8)
     CreateCreature("MOKOBO03",[948.1351],NE)
     CreateCreature("MOKOBO04",[1552.1775],NE)
     CreateCreature("MOKOBO03",[1382.1111],SW)
   RESPONSE #50
-    SetGlobalTimer("MO_SpawnGroupTwo","AR1203",6)
+    SetGlobalTimer("MO_SpawnGroupTwo","AR1203",8)
     CreateCreature("MOKOBO01",[1229.1545],NE)
     CreateCreature("MOKOBO02",[1514.1175],SW)
     CreateCreature("MOKOBO03",[2193.1620],SW)
@@ -57,12 +57,12 @@ IF
   GlobalTimerExpired("MO_SpawnGroupThree","AR1203")
 THEN
   RESPONSE #50
-    SetGlobalTimer("MO_SpawnGroupThree","AR1203",6)
+    SetGlobalTimer("MO_SpawnGroupThree","AR1203",8)
     CreateCreature("MOKOBO03",[1454.1707],NE)
     CreateCreature("MOKOBO02",[1764.1893],NE)
     CreateCreature("MOKOBO03",[1253.979],SW)
   RESPONSE #50
-    SetGlobalTimer("MO_SpawnGroupThree","AR1203",6)
+    SetGlobalTimer("MO_SpawnGroupThree","AR1203",8)
     CreateCreature("MOKOBO01",[1059.1431],NE)
     CreateCreature("MOKOBO02",[1769.1359],SW)
     CreateCreature("MOKOBO04",[2010.1508],SW)
