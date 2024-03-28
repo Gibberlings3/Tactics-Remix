@@ -63,10 +63,6 @@ These components will check if SCS is present and update accordingly to prevent 
 
 This component makes all Sahuagin fiercer opponents. It also updates the fight against the Priestess at the heart of the City of Caverns who will now summon allies to come to her aid. Beware, on Insane Difficulty she will summon the Minor Avatar of Sekolah.
 
-#### Morpheus562's Improved Planar Prison Bounty Hunters
-
-This component makes the fight against the Planar Prison bounty hunters a bit more difficult. Aawill the Bard is now a Blade and will use spells commensurate with his level. His companions will also be better equipped, and an additional companion may join the fight at higher difficulties.
-
 #### Improved Irenicus
 
 I take the original Tactics fight, with some slight alterations, to give Joneleth "The Shattered One" Irenicus the fight he and the player truly deserve. This is a multi-phase fight that should provide a suitable challenge. To start, instead of summoning generic demons, Jon will shatter himself into multiple fragments and brings forth enemies for each Tear of Bhaal Test in Hell. These enemies will provide their own unique challenges, and will bring forth more minions to aid themselves, depending on the difficulty. 
@@ -107,6 +103,14 @@ Adds three dragons to Small Teeth Pass (AR1700).
 
 WARNING: Reported to be *incompatible* with TDD. 
 
+#### Morpheus562's Improved Samia and Party in Windspear Hills Dungeon (EARLY TESTING - COMING SOON)
+
+This component makes the fight against Samia and her party within the Windspear Hills Dungeon more difficult. They will be better equipped and have refined scripting to increase the challenge. 
+
+#### Morpheus562's Improved Planar Prison Bounty Hunters
+
+This component makes the fight against the Planar Prison bounty hunters a bit more difficult. Aawill the Bard is now a Blade and will use spells commensurate with his level. His companions will also be better equipped, and an additional companion may join the fight at higher difficulties.
+
 #### Morpheus562's Improved Drizzt (BGEE)
 
 This makes the BGEE version of Drizzt more formidable. If he goes hostile, he will prioritize attack the player instead of the gnolls. 
@@ -114,6 +118,26 @@ This makes the BGEE version of Drizzt more formidable. If he goes hostile, he wi
 #### Morpheus562's Improved Drizzt (BG2EE)
 
 This makes the BG2EE version of Drizzt and his companions more formidable. Additionally, if playing on Insane difficulty or higher he will bring in a familiar mage to aid him. Should the mage be defeated, any gear acquired from the battle will not be taken from the party at a later time. 
+
+#### Morpheus562's Improved Mutamin's Garden and Tougher Basilisks (EARLY TESTING - COMING SOON)
+
+Basilisks will now be much more difficult and Mutamin will have refined scripting to become more of a threat. The difficulty increase should be enough to prevent early game cheesing to quickly gain experience.
+
+#### Morpheus562's Improved Gnoll Stronghold and Tougher Gnolls (EARLY TESTING - COMING SOON)
+
+I was never pleased with the Gnoll Stronghold and any of the mods that added to it. Additionally, there never felt like much of a difference between the Gnoll types. For this, I took a twofold approach with 1) making the gnolls more of a threat and 2) add Gnoll Shamans and a leader to the Gnoll Stronghold. Gnolls worship Yeenoghu, a violent demon lord, and their summons reflect his skeletal servants.
+
+#### Morpheus562's Improved Bassilus (EARLY TESTING - COMING SOON)
+
+This makes the Bassilus encounter more challenging with spells commensurate with his level.
+
+#### Morpheus562's Improved Maulers of Undermountain (EARLY TESTING - COMING SOON)
+
+To me, the Maulers of Undermountain were always a pushover, so I updated them and their scripts to be more of a suitable party vs. party challenge.
+
+#### Morpheus562's Improved Durlag's Demon Knight (EARLY TESTING - COMING SOON)
+
+I updated the Demon Knight for this fight to be slightly neutered but more in-line version the Tactics Remix Tougher Demon Knights found within the Underdark. Additionally, the +3 two-handed sword found in the Durlag's Tower chest fight is replaced with magical quarterstaff, and the sword is given to the Demon Knight.
 
 #### Tougher Fire Giants
 
